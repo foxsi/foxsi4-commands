@@ -77,7 +77,7 @@ dict_name = "command_lookup"
 with open("commands.py", "w") as file:
     file.write(dict_name + " = {} \n")
     for i, key in enumerate(keys):
-        file.writelines(dict_name + "[" + str(key) + "] = (" + str(values[0]) + "," + str(values[1]) + "," + str(values[2]) + ")\n")
+        file.writelines(dict_name + "[" + str(key) + "] = (0b" + str(values[i][0]) + ", " + str(values[i][1]) + ", 0x" + str(values[i][2]) + ")\n")
 
 # generate files that will generate C++ std::unordered_map for each detector
 
