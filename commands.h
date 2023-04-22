@@ -5,7 +5,7 @@ struct MemData {
 	uint32_t addr;
 	uint32_t data;
 };
-std::unordered_map<char, MemData> command_lookup = {
+std::unordered_map<char, MemData> COMMAND_LOOKUP = {
 	{0x80, (struct MemData){0b00000000, 0x00, 0x0}},
 	{0x81, (struct MemData){0b00000000, 0x00, 0x0}},
 	{0x82, (struct MemData){0b00000000, 0x00, 0x0}},
