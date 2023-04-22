@@ -130,3 +130,9 @@ dmypy.json
 
 # Excel
 *.xlsx
+
+# C++
+*.o
+
+# vscode
+.vscode/
