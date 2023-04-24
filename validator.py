@@ -95,4 +95,4 @@ with open(c_filename, "w") as file:
 
 # generate .json file
 
-# validate outputed files?
+# validate outputed files
