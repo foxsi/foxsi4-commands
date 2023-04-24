@@ -19,6 +19,7 @@ std::unordered_map<char, MemData> COMMAND_LOOKUP = {
 	{0x9d, (struct MemData){0b00000000, 0x00, 0x0}},
 	{0xa1, (struct MemData){0b00000000, 0x00, 0x0}},
 	{0xa4, (struct MemData){0b00000000, 0x00, 0x0}},
+	{0xa8, (struct MemData){0b00000000, 0x00, 0x0}},
 	{0x92, (struct MemData){0b00000000, 0x00, 0x0}},
 	{0x93, (struct MemData){0b00000000, 0x00, 0x0}},
 	{0xb8, (struct MemData){0b00000000, 0x00, 0x0}},
