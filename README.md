@@ -1,9 +1,9 @@
 # foxsi4-commands
-List of uplink commands for FOXSI-4 onboard systems and associated tools.
+A list of uplink commands for FOXSI-4 onboard systems and associated tools.
 
-## Using this repository
+## About this repository
 
-This repository exists to centrally manage changes to the FOXSI-4 flight command list. The full command deck and relevant metadata is in [command_deck.csv](command_deck.csv). A script ([validator.py](validator.py)) exists to validate all commands in the deck (guarantee command uniqueness and applicability to onboard systems) and generate command files for integration in the flight software.
+This repository is used to centrally manage changes to the FOXSI-4 flight command list. The full command deck and relevant metadata is in [command_deck.csv](command_deck.csv). A script ([validator.py](validator.py)) exists to validate all commands in the deck (guarantee command uniqueness and applicability to onboard systems) and generate command files for integration in the flight software.
 
 ## Command structure
 
@@ -24,7 +24,49 @@ where the different components are structured like this:
 | `arg 1`       | 32 (max)          | This argument has a different role for a few commands, but is totally unused for most commands. See [command_deck.csv](command_deck.csv) for details. |
 | `arg 2`       | 32 (max)          | This argument has a different role for a few commands, but is totally unused for most commands. See [command_deck.csv](command_deck.csv) for details. |
 
-### CdTe commands
+In the Formatter, the `R/W bit` and `command bits` are concatenated to form a unique **`command id`** byte. This **`command id`** is then used in a lookup table unique to a specific detector system to find command data to send to that detector system. This way, the Formatter has a generic interface for command transmission, which relies on command implementation defined by each detector team for their specific system. The command lookup by **`command id`** is [defined below](lookup_section).
 
-For the CdTe system, setting the last for bits of `subsystem ID` specifies which canisters the command will be applied to. For example, setting to `0b0000 0100` will send the command to canister 3, and setting `0b0000 0101` will send the command to both canisters 3 and 1. Setting `subsystem ID` to `0b0000 0000` will send the command to the CdTe DE. The first four digits have are unused and should be set to 0. For other onboard systems, this byte is ignored. 
+#### Note on CdTe commands
 
+For the CdTe system, I  plan to use the last four bits of `subsystem ID` to specify which canisters to apply the command to. For example, setting to `0b0000 0100` would send the command to canister 3, and setting `0b0000 0101` would send the command to both canisters 3 and 1. Setting `subsystem ID` to `0b0000 0000` would send the command to the CdTe DE. Using only a lookup table, this would mean enumerating 16 versions of each command. So we should define a less rigid interface to use for this purpose.
+
+### (Command lookup)[lookup_section]
+
+After editing [command_deck.csv](command_deck.csv), run the [validator.py](validator.py) script to validate commands and update the [commands.h](commands.h), [commands.py](commands.py), [commands.json](commands.json) output files. The file [commands.h](commands.h) will contain a C++ `std::unordered_map` which can be indexed by `command id` keys, returning a custom data structure defined to hold SpaceWire instruction byte, memory address, and data (for write commands) or reply data length (for read commands): 
+
+```C++
+struct MemData {
+	uint8_t instruction;    // SpaceWire instruction byte
+	uint32_t addr;          // remote memory address
+	uint32_t data;          // data to write or length of data to be read
+};
+```
+
+The file [commands.py](commands.py) defines a Pythond Dict object, mapping input `command id` key to a Tuple of SpaceWire instruction byte, memory address, and data.
+
+The file [commands.json](commands.json) provides the same information in the .xlsx or .csv, but formatted as a .json for use in software.
+
+## Actions for detector teams
+
+Detector teams (CMOS and CdTe) should populate [command_deck.csv](commands.csv) with SpaceWire instruction byte, write data, or read data length for each command in the appropriate fields. 
+
+After editing, please push your modified files to your branch in this repository.
+
+### Step-by-step:
+
+At your terminal, navigate to a folder you want this repository in. Then:
+
+```console
+$ git clone https://github.com/foxsi/foxsi4-commands.git
+$ cd foxsi4-commands.git
+$ git checkout <your branch name>
+$ git pull
+```
+
+where `<your branch name>` is either `cmos`, `timepix`, or `cdte`. Now, make your edits to the [commands.csv](commands.csv). When you are done, 
+
+```console
+$ git add <all> <the> <files> <your> <edited>
+$ git commit -m "<a short messages describing your edits>"
+$ git push
+```
