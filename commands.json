@@ -28,7 +28,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "test communication with system"
     },
     {
         "Name": "read_word",
@@ -59,7 +59,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "read one word from memory at address"
     },
     {
         "Name": "read_block",
@@ -90,7 +90,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "read a block of memory at address"
     },
     {
         "Name": "read_all_hk",
@@ -121,7 +121,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "read all housekeeping data from system"
     },
     {
         "Name": "read_temp",
@@ -152,7 +152,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "read temperature data from system"
     },
     {
         "Name": "read_software_status",
@@ -183,7 +183,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "read software status flags from system"
     },
     {
         "Name": "read_err_flag",
@@ -214,7 +214,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "read error status flags from system"
     },
     {
         "Name": "read_all_asic_params",
@@ -245,7 +245,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "read all ASIC parameters from CdTe ASICs"
     },
     {
         "Name": "read_readout_mode",
@@ -276,7 +276,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get CdTe readout mode (sparse/full)"
     },
     {
         "Name": "read_trigger_threshold",
@@ -307,7 +307,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get CdTe trigger threshold (for each strip? For all strips? Use args?)"
     },
     {
         "Name": "read_strip_enable_status",
@@ -338,7 +338,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": "256 total strips"
+        "description": "check whether CdTe strip is enabled for all 256 total strips"
     },
     {
         "Name": "read_hv",
@@ -369,7 +369,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get the high voltage value (DAC setting for CdTe)"
     },
     {
         "Name": "read_clock_counter",
@@ -400,7 +400,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get the clock counter"
     },
     {
         "Name": "read_event_batch",
@@ -431,7 +431,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get a list (what length?) of photon event data"
     },
     {
         "Name": "read_pc_exposure",
@@ -462,7 +462,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get photon counting mode exposure time from CMOS camera"
     },
     {
         "Name": "read_ql_exposure",
@@ -493,7 +493,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get quick look mode exposure time from CMOS camera"
     },
     {
         "Name": "read_flight_status",
@@ -555,7 +555,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get voltage output measurements from power distribution system"
     },
     {
         "Name": "read_current_output",
@@ -586,7 +586,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get current output measurements from power distribution system"
     },
     {
         "Name": "read_power_output_mask",
@@ -617,7 +617,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "get power output on/off mask from power distribution system"
     },
     {
         "Name": "read_attenuator_insert",
@@ -648,7 +648,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "check if attenuator ring has been inserted"
     },
     {
         "Name": "off",
@@ -656,8 +656,8 @@
         "R=1/W=0": "0",
         "bitstring": "100 0000",
         "hex": "0x40",
-        "arg1.name": "\u2014",
-        "arg1.length [B]": "\u2014",
+        "arg1.name": "mask",
+        "arg1.length [B]": "2",
         "arg2.name": "\u2014",
         "arg2.length [B]": "\u2014",
         "reply.name": "\u2014",
@@ -679,7 +679,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "turn systems off (to power distribution system)"
     },
     {
         "Name": "on",
@@ -687,8 +687,8 @@
         "R=1/W=0": "0",
         "bitstring": "100 0010",
         "hex": "0x42",
-        "arg1.name": "\u2014",
-        "arg1.length [B]": "\u2014",
+        "arg1.name": "mask",
+        "arg1.length [B]": "2",
         "arg2.name": "\u2014",
         "arg2.length [B]": "\u2014",
         "reply.name": "\u2014",
@@ -710,7 +710,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "turn systems on (to power distribution system)"
     },
     {
         "Name": "ground_off",
@@ -803,7 +803,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "turn systems on or off (to power distribution system)"
     },
     {
         "Name": "set_hv",
@@ -834,7 +834,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "set high voltage value (DAC setting for CdTe)"
     },
     {
         "Name": "hv_ramp_down_start",
@@ -865,7 +865,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "start high voltage ramping down"
     },
     {
         "Name": "hv_ramp_up_start",
@@ -896,7 +896,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "start high voltage ramping up"
     },
     {
         "Name": "stop_data_store",
@@ -927,7 +927,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "tell system to stop storing data on disk"
     },
     {
         "Name": "start_data_store",
@@ -958,7 +958,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "tell system to start storing data on disk"
     },
     {
         "Name": "set_all_asic_params",
@@ -968,8 +968,8 @@
         "hex": "0x18",
         "arg1.name": "asic",
         "arg1.length [B]": "1",
-        "arg2.name": null,
-        "arg2.length [B]": null,
+        "arg2.name": "params",
+        "arg2.length [B]": "136",
         "reply.name": "\u2014",
         "reply.length [B]": "\u2014",
         "Formatter": "0",
@@ -989,7 +989,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "configure all ASIC parameters for CdTe system"
     },
     {
         "Name": "set_readout_mode",
@@ -1020,7 +1020,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "change the CdTe readout mode (sparse/full)"
     },
     {
         "Name": "set_trigger_thresholds",
@@ -1051,7 +1051,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "set CdTe trigger thresholds (for each strip? For all strips?)"
     },
     {
         "Name": "set_strip_enable_status",
@@ -1082,7 +1082,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "set enable/disable mask for CdTe strips"
     },
     {
         "Name": "set_pc_exposure",
@@ -1113,7 +1113,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "set photon counting mode exposure time for CMOS camera"
     },
     {
         "Name": "set_ql_exposure",
@@ -1144,7 +1144,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "set quick look mode exposure time for CMOS camera"
     },
     {
         "Name": "insert_attenuator",
@@ -1175,7 +1175,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "insert the attenuator ring"
     },
     {
         "Name": "notify_prelaunch",
@@ -1206,7 +1206,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "notify system that launch will occur soon"
     },
     {
         "Name": "notify_launch_hold",
@@ -1237,7 +1237,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "notify system that launch has been put on hold"
     },
     {
         "Name": "notify_shutter_open",
@@ -1268,7 +1268,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "notify system that the rocket shutter door has opened"
     },
     {
         "Name": "notify_shutter_close",
@@ -1299,7 +1299,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "notify system that the rocket shutter door has closed"
     },
     {
         "Name": "notify_attenuator_in",
@@ -1330,7 +1330,7 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "notify system that the attenuator ring has been inserted"
     },
     {
         "Name": "notify_power_off",
@@ -1361,6 +1361,6 @@
         "address": "0x00",
         "length": "0",
         "example": null,
-        "description": null
+        "description": "notify system that power will be cut soon"
     }
 ]
