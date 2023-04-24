@@ -94,5 +94,24 @@ with open(c_filename, "w") as file:
     file.write("};")
 
 # generate .json file
+# edit header for json variable naming
+json_head = head
+json_head[5] = "arg1." + json_head[5]
+json_head[6] = "arg1." + json_head[6]
+json_head[7] = "arg2." + json_head[7]
+json_head[8] = "arg2." + json_head[8]
+json_head[9] = "reply." + json_head[9]
+json_head[10] = "reply." + json_head[10]
+
+json_data = command_data
+json_data.columns = json_head
+
+# write the file
+json_filename = "commands.json"
+with open(json_filename, "w") as file:
+    json_result = json_data.to_json(orient="records")
+    parsed = json.loads(json_result)
+    json_string = json.dumps(parsed, indent=4)
+    file.write(json_string)
 
 # validate outputed files
