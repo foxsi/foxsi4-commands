@@ -30,7 +30,7 @@ In the Formatter, the `R/W bit` and `command bits` are concatenated to form a un
 
 For the CdTe system, I  plan to use the last four bits of `subsystem ID` to specify which canisters to apply the command to. For example, setting to `0b0000 0100` would send the command to canister 3, and setting `0b0000 0101` would send the command to both canisters 3 and 1. Setting `subsystem ID` to `0b0000 0000` would send the command to the CdTe DE. Using only a lookup table, this would mean enumerating 16 versions of each command. So we should define a less rigid interface to use for this purpose.
 
-### (Command lookup)[#lookup_section]
+### [Command lookup](#lookup_section)
 
 After editing [command_deck.csv](command_deck.csv), run the [validator.py](validator.py) script to validate commands and update the [commands.h](commands.h), [commands.py](commands.py), [commands.json](commands.json) output files. The file [commands.h](commands.h) will contain a C++ `std::unordered_map` which can be indexed by `command id` keys, returning a custom data structure defined to hold SpaceWire instruction byte, memory address, and data (for write commands) or reply data length (for read commands): 
 
