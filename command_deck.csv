@@ -1,5 +1,5 @@
 ﻿,,command,,,arg1,,arg2,,reply,,applicability,,,,,,,,,,,,,lookup entries,,,,
-Name,CdTe select,R=1/W=0,bitstring,hex,name,length [B],name,length [B],name,length [B],Formatter,Housekeeping,GSE,EVTM,CdTe1,CdTe2,CdTe3,CdTe4,CdTeDE,CMOS1,CMOS2,Timepix,trigger,instruction,address,length,example,description
+name,CdTe select,R=1/W=0,bitstring,hex,name,length [B],name,length [B],name,length [B],Formatter,Housekeeping,GSE,EVTM,CdTe1,CdTe2,CdTe3,CdTe4,CdTeDE,CMOS1,CMOS2,Timepix,trigger,instruction,address,length,example,description
 ping,0000 xxxx,1,000 0000,0x80,—,—,—,—,pingback,1,0,1,1,0,1,1,1,1,1,1,1,1,,00 0000 00,0x00,0,,test communication with system
 read_word,0000 xxxx,1,000 0001,0x81,addr,4,—,—,word,1,0,0,0,0,1,1,1,1,1,1,1,0,,00 0000 00,0x00,0,,read one word from memory at address
 read_block,0000 xxxx,1,000 0010,0x82,addr,4,len,4,block,arg2,0,0,0,0,1,1,1,1,1,1,1,0,,00 0000 00,0x00,0,,read a block of memory at address

@@ -1,6 +1,6 @@
 [
     {
-        "Name": "ping",
+        "name": "ping",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "000 0000",
@@ -31,7 +31,7 @@
         "description": "test communication with system"
     },
     {
-        "Name": "read_word",
+        "name": "read_word",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "000 0001",
@@ -62,7 +62,7 @@
         "description": "read one word from memory at address"
     },
     {
-        "Name": "read_block",
+        "name": "read_block",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "000 0010",
@@ -93,7 +93,7 @@
         "description": "read a block of memory at address"
     },
     {
-        "Name": "read_all_hk",
+        "name": "read_all_hk",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "000 1000",
@@ -124,7 +124,7 @@
         "description": "read all housekeeping data from system"
     },
     {
-        "Name": "read_temp",
+        "name": "read_temp",
         "CdTe select": "0000 0000",
         "R=1/W=0": "1",
         "bitstring": "000 1001",
@@ -155,7 +155,7 @@
         "description": "read temperature data from system"
     },
     {
-        "Name": "read_software_status",
+        "name": "read_software_status",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "000 1010",
@@ -186,7 +186,7 @@
         "description": "read software status flags from system"
     },
     {
-        "Name": "read_err_flag",
+        "name": "read_err_flag",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "000 1011",
@@ -217,7 +217,7 @@
         "description": "read error status flags from system"
     },
     {
-        "Name": "read_all_asic_params",
+        "name": "read_all_asic_params",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "001 1000",
@@ -248,7 +248,7 @@
         "description": "read all ASIC parameters from CdTe ASICs"
     },
     {
-        "Name": "read_readout_mode",
+        "name": "read_readout_mode",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "001 1010",
@@ -279,7 +279,7 @@
         "description": "get CdTe readout mode (sparse/full)"
     },
     {
-        "Name": "read_trigger_threshold",
+        "name": "read_trigger_threshold",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "001 1100",
@@ -310,7 +310,7 @@
         "description": "get CdTe trigger threshold (for each strip? For all strips? Use args?)"
     },
     {
-        "Name": "read_strip_enable_status",
+        "name": "read_strip_enable_status",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "001 1101",
@@ -341,7 +341,7 @@
         "description": "check whether CdTe strip is enabled for all 256 total strips"
     },
     {
-        "Name": "read_hv",
+        "name": "read_hv",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "010 0001",
@@ -372,7 +372,7 @@
         "description": "get the high voltage value (DAC setting for CdTe)"
     },
     {
-        "Name": "read_clock_counter",
+        "name": "read_clock_counter",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "010 0100",
@@ -403,7 +403,7 @@
         "description": "get the clock counter"
     },
     {
-        "Name": "read_event_batch",
+        "name": "read_event_batch",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "010 1000",
@@ -434,7 +434,7 @@
         "description": "get a list (what length?) of photon event data"
     },
     {
-        "Name": "read_pc_exposure",
+        "name": "read_pc_exposure",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "1",
         "bitstring": "001 0010",
@@ -465,7 +465,7 @@
         "description": "get photon counting mode exposure time from CMOS camera"
     },
     {
-        "Name": "read_ql_exposure",
+        "name": "read_ql_exposure",
         "CdTe select": "0000 0000",
         "R=1/W=0": "1",
         "bitstring": "001 0011",
@@ -496,7 +496,7 @@
         "description": "get quick look mode exposure time from CMOS camera"
     },
     {
-        "Name": "read_flight_status",
+        "name": "read_flight_status",
         "CdTe select": "0000 0000",
         "R=1/W=0": "1",
         "bitstring": "011 1000",
@@ -527,7 +527,7 @@
         "description": "bitmask provided by Formatter specifying status of prelaunch, shutter, attenuator, etc"
     },
     {
-        "Name": "read_voltage_output",
+        "name": "read_voltage_output",
         "CdTe select": "0000 0000",
         "R=1/W=0": "1",
         "bitstring": "011 0101",
@@ -558,7 +558,7 @@
         "description": "get voltage output measurements from power distribution system"
     },
     {
-        "Name": "read_current_output",
+        "name": "read_current_output",
         "CdTe select": "0000 0000",
         "R=1/W=0": "1",
         "bitstring": "011 0110",
@@ -589,7 +589,7 @@
         "description": "get current output measurements from power distribution system"
     },
     {
-        "Name": "read_power_output_mask",
+        "name": "read_power_output_mask",
         "CdTe select": "0000 0000",
         "R=1/W=0": "1",
         "bitstring": "011 0111",
@@ -620,7 +620,7 @@
         "description": "get power output on/off mask from power distribution system"
     },
     {
-        "Name": "read_attenuator_insert",
+        "name": "read_attenuator_insert",
         "CdTe select": "0000 0000",
         "R=1/W=0": "1",
         "bitstring": "011 1001",
@@ -651,7 +651,7 @@
         "description": "check if attenuator ring has been inserted"
     },
     {
-        "Name": "off",
+        "name": "off",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "100 0000",
@@ -682,7 +682,7 @@
         "description": "turn systems off (to power distribution system)"
     },
     {
-        "Name": "on",
+        "name": "on",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "100 0010",
@@ -713,7 +713,7 @@
         "description": "turn systems on (to power distribution system)"
     },
     {
-        "Name": "ground_off",
+        "name": "ground_off",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "100 0100",
@@ -744,7 +744,7 @@
         "description": "control power output with Formatter local SPI bus"
     },
     {
-        "Name": "ground_on",
+        "name": "ground_on",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "100 0101",
@@ -775,7 +775,7 @@
         "description": "control power output with Formatter local SPI bus"
     },
     {
-        "Name": "set_power_output_mask",
+        "name": "set_power_output_mask",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "111 0111",
@@ -806,7 +806,7 @@
         "description": "turn systems on or off (to power distribution system)"
     },
     {
-        "Name": "set_hv",
+        "name": "set_hv",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "110 0001",
@@ -837,7 +837,7 @@
         "description": "set high voltage value (DAC setting for CdTe)"
     },
     {
-        "Name": "hv_ramp_down_start",
+        "name": "hv_ramp_down_start",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "110 0010",
@@ -868,7 +868,7 @@
         "description": "start high voltage ramping down"
     },
     {
-        "Name": "hv_ramp_up_start",
+        "name": "hv_ramp_up_start",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "110 0011",
@@ -899,7 +899,7 @@
         "description": "start high voltage ramping up"
     },
     {
-        "Name": "stop_data_store",
+        "name": "stop_data_store",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "010 0100",
@@ -930,7 +930,7 @@
         "description": "tell system to stop storing data on disk"
     },
     {
-        "Name": "start_data_store",
+        "name": "start_data_store",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "010 0101",
@@ -961,7 +961,7 @@
         "description": "tell system to start storing data on disk"
     },
     {
-        "Name": "set_all_asic_params",
+        "name": "set_all_asic_params",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "001 1000",
@@ -992,7 +992,7 @@
         "description": "configure all ASIC parameters for CdTe system"
     },
     {
-        "Name": "set_readout_mode",
+        "name": "set_readout_mode",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "001 1010",
@@ -1023,7 +1023,7 @@
         "description": "change the CdTe readout mode (sparse/full)"
     },
     {
-        "Name": "set_trigger_thresholds",
+        "name": "set_trigger_thresholds",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "001 1100",
@@ -1054,7 +1054,7 @@
         "description": "set CdTe trigger thresholds (for each strip? For all strips?)"
     },
     {
-        "Name": "set_strip_enable_status",
+        "name": "set_strip_enable_status",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "001 1101",
@@ -1085,7 +1085,7 @@
         "description": "set enable/disable mask for CdTe strips"
     },
     {
-        "Name": "set_pc_exposure",
+        "name": "set_pc_exposure",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "001 0010",
@@ -1116,7 +1116,7 @@
         "description": "set photon counting mode exposure time for CMOS camera"
     },
     {
-        "Name": "set_ql_exposure",
+        "name": "set_ql_exposure",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "001 0011",
@@ -1147,7 +1147,7 @@
         "description": "set quick look mode exposure time for CMOS camera"
     },
     {
-        "Name": "insert_attenuator",
+        "name": "insert_attenuator",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "011 1001",
@@ -1178,7 +1178,7 @@
         "description": "insert the attenuator ring"
     },
     {
-        "Name": "notify_prelaunch",
+        "name": "notify_prelaunch",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "111 0000",
@@ -1209,7 +1209,7 @@
         "description": "notify system that launch will occur soon"
     },
     {
-        "Name": "notify_launch_hold",
+        "name": "notify_launch_hold",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "111 0001",
@@ -1240,7 +1240,7 @@
         "description": "notify system that launch has been put on hold"
     },
     {
-        "Name": "notify_shutter_open",
+        "name": "notify_shutter_open",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "111 0010",
@@ -1271,7 +1271,7 @@
         "description": "notify system that the rocket shutter door has opened"
     },
     {
-        "Name": "notify_shutter_close",
+        "name": "notify_shutter_close",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "111 0011",
@@ -1302,7 +1302,7 @@
         "description": "notify system that the rocket shutter door has closed"
     },
     {
-        "Name": "notify_attenuator_in",
+        "name": "notify_attenuator_in",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "111 0100",
@@ -1333,7 +1333,7 @@
         "description": "notify system that the attenuator ring has been inserted"
     },
     {
-        "Name": "notify_power_off",
+        "name": "notify_power_off",
         "CdTe select": "0000 xxxx",
         "R=1/W=0": "0",
         "bitstring": "111 1000",
