@@ -1,47 +1,56 @@
-﻿,,command,,,arg1,,arg2,,reply,,applicability,,,,,,,,,,,,,lookup entries,,,,
+Unnamed: 0,Unnamed: 1,command,Unnamed: 3,Unnamed: 4,arg1,Unnamed: 6,arg2,Unnamed: 8,reply,Unnamed: 10,applicability,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed: 19,Unnamed: 20,Unnamed: 21,Unnamed: 22,Unnamed: 23,lookup entries,Unnamed: 25,Unnamed: 26,Unnamed: 27,Unnamed: 28
 name,CdTe select,R=1/W=0,bitstring,hex,name,length [B],name,length [B],name,length [B],Formatter,Housekeeping,GSE,EVTM,CdTe1,CdTe2,CdTe3,CdTe4,CdTeDE,CMOS1,CMOS2,Timepix,trigger,instruction,address,length,example,description
-ping,0000 xxxx,1,000 0000,0x80,—,—,—,—,pingback,1,0,1,1,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,test communication with system
-read_word,0000 xxxx,1,000 0001,0x81,addr,4,—,—,word,1,0,0,0,0,1,1,1,1,1,1,1,0,?,00 0000 00,0x00,0,todo,read one word from memory at address
-read_block,0000 xxxx,1,000 0010,0x82,addr,4,len,4,block,arg2,0,0,0,0,1,1,1,1,1,1,1,0,?,00 0000 00,0x00,0,todo,read a block of memory at address
-read_all_hk,0000 xxxx,1,000 1000,0x88,—,—,—,—,hk,see lookup,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,read all housekeeping data from system
-read_temp,0000 0000,1,000 1001,0x89,—,—,—,—,temp,see lookup,1,1,0,0,0,0,0,0,1,1,1,1,?,00 0000 00,0x00,0,todo,read temperature data from system
-read_software_status,0000 xxxx,1,000 1010,0x8A,—,—,—,—,status,see lookup,1,1,0,0,0,0,0,0,1,1,1,1,?,00 0000 00,0x00,0,todo,read software status flags from system
-read_err_flag,0000 xxxx,1,000 1011,0x8B,—,—,—,—,errors,see lookup,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,read error status flags from system
-read_all_asic_params,0000 xxxx,1,001 1000,0x98,—,—,—,—,params,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,00 0000 00,0x00,0,todo,read all ASIC parameters from CdTe ASICs
-read_readout_mode,0000 xxxx,1,001 1010,0x9A,—,—,—,—,mode,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,00 0000 00,0x00,0,todo,get CdTe readout mode (sparse/full)
-read_trigger_threshold,0000 xxxx,1,001 1100,0x9C,—,—,—,—,threshold,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,00 0000 00,0x00,0,todo,get CdTe trigger threshold (for each strip? For all strips? Use args?)
-read_strip_enable_status,0000 xxxx,1,001 1101,0x9D,—,—,—,—,enable,8,0,0,0,0,1,1,1,1,1,0,0,0,?,00 0000 00,0x00,0,todo,check whether CdTe strip is enabled for all 256 total strips
-read_hv,0000 xxxx,1,010 0001,0xA1,—,—,—,—,value,2,0,0,0,0,1,1,1,1,1,0,0,1,?,00 0000 00,0x00,0,todo,get the high voltage value (DAC setting for CdTe)
-read_clock_counter,0000 xxxx,1,010 0100,0xA4,—,—,—,—,count,?,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,get the clock counter
-read_event_batch,0000 xxxx,1,010 1000,0xA8,—,—,—,—,events,?,0,0,0,0,1,1,1,1,1,0,0,1,?,00 0000 00,0x00,0,todo,get a list (what length?) of photon event data
-read_pc_exposure,0000 xxxx,1,001 0010,0x92,—,—,—,—,time,?,0,0,0,0,0,0,0,0,0,1,1,0,?,00 0000 00,0x00,0,todo,get photon counting mode exposure time from CMOS camera
-read_ql_exposure,0000 0000,1,001 0011,0x93,—,—,—,—,time,?,0,0,0,0,0,0,0,0,0,1,1,0,?,00 0000 00,0x00,0,todo,get quick look mode exposure time from CMOS camera
-read_flight_status,0000 0000,1,011 1000,0xB8,—,—,—,—,status,2,1,0,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,"bitmask provided by Formatter specifying status of prelaunch, shutter, attenuator, etc"
-read_voltage_output,0000 0000,1,011 0101,0xB5,—,—,—,—,voltages,1,1,1,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,get voltage output measurements from power distribution system
-read_current_output,0000 0000,1,011 0110,0xB6,—,—,—,—,currents,1,1,1,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,get current output measurements from power distribution system
-read_power_output_mask,0000 0000,1,011 0111,0xB7,—,—,—,—,outputs,2,1,1,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,get power output on/off mask from power distribution system
-read_attenuator_insert,0000 0000,1,011 1001,0xB9,—,—,—,—,bool,1,1,0,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,check if attenuator ring has been inserted
+ping,0000 xxxx,1,0,0x80,—,—,—,—,pingback,1,0,1,1,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,test communication with system
+read_word,0000 xxxx,1,1,0x81,addr,4,—,—,word,1,0,0,0,0,1,1,1,1,1,1,1,0,?,0,0x00,0,todo,read one word from memory at address
+read_block,0000 xxxx,1,10,0x82,addr,4,len,4,block,arg2,0,0,0,0,1,1,1,1,1,1,1,0,?,0,0x00,0,todo,read a block of memory at address
+read_all_hk,0000 xxxx,1,1000,0x88,—,—,—,—,hk,see lookup,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,read all housekeeping data from system
+read_temp,0000 0000,1,1001,0x89,—,—,—,—,temp,see lookup,1,1,0,0,0,0,0,0,1,1,1,1,?,0,0x00,0,todo,read temperature data from system
+read_software_status,0000 xxxx,1,1010,0x8A,—,—,—,—,status,see lookup,1,1,0,0,0,0,0,0,1,1,1,1,?,0,0x00,0,todo,read software status flags from system
+read_err_flag,0000 xxxx,1,1011,0x8B,—,—,—,—,errors,see lookup,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,read error status flags from system
+read_all_asic_params,0000 xxxx,1,11000,0x98,—,—,—,—,params,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,read all ASIC parameters from CdTe ASICs
+read_readout_mode,0000 xxxx,1,11010,0x9A,—,—,—,—,mode,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,get CdTe readout mode (sparse/full)
+read_trigger_threshold,0000 xxxx,1,11100,0x9C,—,—,—,—,threshold,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,get CdTe trigger threshold (for each strip? For all strips? Use args?)
+read_strip_enable_status,0000 xxxx,1,11101,0x9D,—,—,—,—,enable,8,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,check whether CdTe strip is enabled for all 256 total strips
+read_hv,0000 xxxx,1,100001,0xA1,—,—,—,—,value,2,0,0,0,0,1,1,1,1,1,0,0,1,?,0,0x00,0,todo,get the high voltage value (DAC setting for CdTe)
+read_clock_counter,0000 xxxx,1,100100,0xA4,—,—,—,—,count,?,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,get the clock counter
+read_event_batch,0000 xxxx,1,101000,0xA8,—,—,—,—,events,?,0,0,0,0,1,1,1,1,1,0,0,1,?,0,0x00,0,todo,get a list (what length?) of photon event data
+read_pc_exposure,0000 xxxx,1,10010,0x92,—,—,—,—,time,?,0,0,0,0,0,0,0,0,0,1,1,0,?,0,0x00,0,todo,get photon counting mode exposure time from CMOS camera
+read_ql_exposure,0000 0000,1,10011,0x93,—,—,—,—,time,?,0,0,0,0,0,0,0,0,0,1,1,0,?,0,0x00,0,todo,get quick look mode exposure time from CMOS camera
+read_flight_status,0000 0000,1,111000,0xB8,—,—,—,—,status,2,1,0,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,"bitmask provided by Formatter specifying status of prelaunch, shutter, attenuator, etc"
+read_voltage_output,0000 0000,1,110101,0xB5,—,—,—,—,voltages,1,1,1,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,get voltage output measurements from power distribution system
+read_current_output,0000 0000,1,110110,0xB6,—,—,—,—,currents,1,1,1,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,get current output measurements from power distribution system
+read_power_output_mask,0000 0000,1,110111,0xB7,—,—,—,—,outputs,2,1,1,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,get power output on/off mask from power distribution system
+read_attenuator_insert,0000 0000,1,111001,0xB9,—,—,—,—,bool,1,1,0,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,check if attenuator ring has been inserted
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-off,0000 0000,0,100 0000,0x40,mask,2,—,—,—,—,0,1,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,turn systems off (to power distribution system)
-on,0000 0000,0,100 0010,0x42,mask,2,—,—,—,—,0,1,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,turn systems on (to power distribution system)
-ground_off,0000 0000,0,100 0100,0x44,—,—,—,—,—,—,1,0,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,control power output with Formatter local SPI bus
-ground_on,0000 0000,0,100 0101,0x45,—,—,—,—,—,—,1,0,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,control power output with Formatter local SPI bus
-set_power_output_mask,0000 0000,0,111 0111,0x77,mask,2,—,—,—,—,1,0,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,turn systems on or off (to power distribution system)
-set_hv,0000 xxxx,0,110 0001,0x61,value,2,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,1,?,00 0000 00,0x00,0,todo,set high voltage value (DAC setting for CdTe)
-hv_ramp_down_start,0000 xxxx,0,110 0010,0x62,—,—,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,1,?,00 0000 00,0x00,0,todo,start high voltage ramping down
-hv_ramp_up_start,0000 xxxx,0,110 0011,0x63,—,—,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,1,?,00 0000 00,0x00,0,todo,start high voltage ramping up
-stop_data_store,0000 xxxx,0,010 0100,0x24,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,tell system to stop storing data on disk
-start_data_store,0000 xxxx,0,010 0101,0x25,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,tell system to start storing data on disk
-set_all_asic_params,0000 xxxx,0,001 1000,0x18,asic,1,params,136,—,—,0,0,0,0,1,1,1,1,1,0,0,0,?,00 0000 00,0x00,0,todo,configure all ASIC parameters for CdTe system
-set_readout_mode,0000 xxxx,0,001 1010,0x1A,mode,1,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,0,?,00 0000 00,0x00,0,todo,change the CdTe readout mode (sparse/full)
-set_trigger_thresholds,0000 xxxx,0,001 1100,0x1C,thresholds,?,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,0,?,00 0000 00,0x00,0,todo,set CdTe trigger thresholds (for each strip? For all strips?)
-set_strip_enable_status,0000 xxxx,0,001 1101,0x1D,status,?,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,0,?,00 0000 00,0x00,0,todo,set enable/disable mask for CdTe strips
-set_pc_exposure,0000 0000,0,001 0010,0x12,exp,?,—,—,—,—,0,0,0,0,0,0,0,0,0,1,1,0,?,00 0000 00,0x00,0,todo,set photon counting mode exposure time for CMOS camera
-set_ql_exposure,0000 0000,0,001 0011,0x13,exp,?,—,—,—,—,0,0,0,0,0,0,0,0,0,1,1,0,?,00 0000 00,0x00,0,todo,set quick look mode exposure time for CMOS camera
-insert_attenuator,0000 0000,0,011 1001,0x39,—,—,—,—,—,—,1,0,0,0,0,0,0,0,0,0,0,0,?,00 0000 00,0x00,0,todo,insert the attenuator ring
-notify_prelaunch,0000 xxxx,0,111 0000,0x70,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,notify system that launch will occur soon
-notify_launch_hold,0000 xxxx,0,111 0001,0x71,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,notify system that launch has been put on hold
-notify_shutter_open,0000 xxxx,0,111 0010,0x72,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,notify system that the rocket shutter door has opened
-notify_shutter_close,0000 xxxx,0,111 0011,0x73,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,notify system that the rocket shutter door has closed
-notify_attenuator_in,0000 xxxx,0,111 0100,0x74,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,notify system that the attenuator ring has been inserted
-notify_power_off,0000 xxxx,0,111 1000,0x78,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,00 0000 00,0x00,0,todo,notify system that power will be cut soon
+off,0000 0000,0,1000000,0x40,mask,2,—,—,—,—,0,1,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,turn systems off (to power distribution system)
+on,0000 0000,0,1000010,0x42,mask,2,—,—,—,—,0,1,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,turn systems on (to power distribution system)
+ground_off,0000 0000,0,1000100,0x44,—,—,—,—,—,—,1,0,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,control power output with Formatter local SPI bus
+ground_on,0000 0000,0,1000101,0x45,—,—,—,—,—,—,1,0,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,control power output with Formatter local SPI bus
+set_power_output_mask,0000 0000,0,1110111,0x77,mask,2,—,—,—,—,1,0,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,turn systems on or off (to power distribution system)
+set_hv,0000 xxxx,0,1100001,0x61,value,2,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,1,?,0,0x00,0,todo,set high voltage value (DAC setting for CdTe)
+hv_ramp_down_start,0000 xxxx,0,1100010,0x62,—,—,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,1,?,0,0x00,0,todo,start high voltage ramping down
+hv_ramp_up_start,0000 xxxx,0,1100011,0x63,—,—,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,1,?,0,0x00,0,todo,start high voltage ramping up
+stop_data_store,0000 xxxx,0,100100,0x24,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,tell system to stop storing data on disk
+start_data_store,0000 xxxx,0,100101,0x25,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,tell system to start storing data on disk
+set_all_asic_params,0000 xxxx,0,11000,0x18,asic,1,params,136,—,—,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0x3c3c0100010101013c3c3c,todo,configure all ASIC parameters for CdTe system
+set_de_idle,0000 xxxx,0,11111,0x1F,—,—,—,—,—,—,0,0,0,0,0,0,0,0,1,0,0,0,?,1100100,0x00,0x3c3c0100020202023c3c3c,todo,set the DE mode
+set_de_standby,0000 xxxx,0,10000,0x10,—,—,—,—,—,—,0,0,0,0,0,0,0,0,1,0,0,0,?,1100100,0x00,0x3c3c0100030303033c3c3c,todo,set the DE mode
+set_de_setup_done,0000 xxxx,0,10001,0x11,—,—,—,—,—,—,0,0,0,0,0,0,0,0,1,0,0,0,?,1100100,0x00,0x3c3c0100040404043c3c3c,todo,set the DE mode
+set_de_observe,0000 xxxx,0,10010,0x12,—,—,—,—,—,—,0,0,0,0,0,0,0,0,1,0,0,0,?,1100100,0x00,0x3c3c0100050505053c3c3c,todo,set the DE mode
+set_de_end_op,0000 xxxx,0,10011,0x13,—,—,—,—,—,—,0,0,0,0,0,0,0,0,1,0,0,0,?,1100100,0x00,0x3c3c0100060606063c3c3c,todo,set the DE mode
+set_can_idle,0000 xxxx,0,10100,0x14,—,—,—,—,—,—,0,0,0,0,1,1,1,1,0,0,0,0,?,1100100,0x022b0000,0x3c3c0100000000003c3c3c,todo,set the canister mode
+set_can_run,0000 xxxx,0,10101,0x15,—,—,—,—,—,—,0,0,0,0,1,1,1,1,0,0,0,0,?,1100100,0x022b0000,0x3c3c0100010101013c3c3c,todo,set the canister mode
+set_can_copy_data,0000 xxxx,0,10110,0x16,—,—,—,—,—,—,0,0,0,0,1,1,1,1,0,0,0,0,?,1100100,0x022b0000,0x3c3c0100020202023c3c3c,todo,set the canister mode
+set_can_end,0000 xxxx,0,10111,0x17,—,—,—,—,—,—,0,0,0,0,1,1,1,1,0,0,0,0,?,1100100,0x022b0000,0x3c3c0100030303033c3c3c,todo,set the canister mode
+set_readout_mode,0000 xxxx,0,11010,0x1A,mode,1,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,change the CdTe readout mode (sparse/full)
+set_trigger_thresholds,0000 xxxx,0,11100,0x1C,thresholds,?,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,set CdTe trigger thresholds (for each strip? For all strips?)
+set_strip_enable_status,0000 xxxx,0,11101,0x1D,status,?,—,—,—,—,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,set enable/disable mask for CdTe strips
+set_pc_exposure,0000 0000,0,111010,0x3A,exp,?,—,—,—,—,0,0,0,0,0,0,0,0,0,1,1,0,?,0,0x00,0,todo,set photon counting mode exposure time for CMOS camera
+set_ql_exposure,0000 0000,0,111011,0x3B,exp,?,—,—,—,—,0,0,0,0,0,0,0,0,0,1,1,0,?,0,0x00,0,todo,set quick look mode exposure time for CMOS camera
+insert_attenuator,0000 0000,0,111001,0x39,—,—,—,—,—,—,1,0,0,0,0,0,0,0,0,0,0,0,?,0,0x00,0,todo,insert the attenuator ring
+notify_prelaunch,0000 xxxx,0,1110000,0x70,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,notify system that launch will occur soon
+notify_launch_hold,0000 xxxx,0,1110001,0x71,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,notify system that launch has been put on hold
+notify_shutter_open,0000 xxxx,0,1110010,0x72,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,notify system that the rocket shutter door has opened
+notify_shutter_close,0000 xxxx,0,1110011,0x73,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,notify system that the rocket shutter door has closed
+notify_attenuator_in,0000 xxxx,0,1110100,0x74,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,notify system that the attenuator ring has been inserted
+notify_power_off,0000 xxxx,0,1111000,0x78,—,—,—,—,—,—,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,notify system that power will be cut soon
