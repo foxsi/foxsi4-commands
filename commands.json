@@ -925,7 +925,7 @@
         "trigger": "?",
         "instruction": "0",
         "address": "0x00",
-        "length": "0x3c3c0100010101013c3c3c",
+        "length": "0x3c3c0100010101013c3c3c3c",
         "example": "todo",
         "description": "configure all ASIC parameters for CdTe system"
     },
@@ -956,7 +956,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x00",
-        "length": "0x3c3c0100020202023c3c3c",
+        "length": "0x3c3c0100020202023c3c3c3c",
         "example": "todo",
         "description": "set the DE mode"
     },
@@ -987,7 +987,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x00",
-        "length": "0x3c3c0100030303033c3c3c",
+        "length": "0x3c3c0100030303033c3c3c3c",
         "example": "todo",
         "description": "set the DE mode"
     },
@@ -1018,7 +1018,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x00",
-        "length": "0x3c3c0100040404043c3c3c",
+        "length": "0x3c3c0100040404043c3c3c3c",
         "example": "todo",
         "description": "set the DE mode"
     },
@@ -1049,7 +1049,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x00",
-        "length": "0x3c3c0100050505053c3c3c",
+        "length": "0x3c3c0100050505053c3c3c3c",
         "example": "todo",
         "description": "set the DE mode"
     },
@@ -1080,7 +1080,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x00",
-        "length": "0x3c3c0100060606063c3c3c",
+        "length": "0x3c3c0100060606063c3c3c3c",
         "example": "todo",
         "description": "set the DE mode"
     },
@@ -1111,7 +1111,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x022b0000",
-        "length": "0x3c3c0100000000003c3c3c",
+        "length": "0x3c3c0100000000003c3c3c3c",
         "example": "todo",
         "description": "set the canister mode"
     },
@@ -1142,7 +1142,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x022b0000",
-        "length": "0x3c3c0100010101013c3c3c",
+        "length": "0x3c3c0100010101013c3c3c3c",
         "example": "todo",
         "description": "set the canister mode"
     },
@@ -1173,7 +1173,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x022b0000",
-        "length": "0x3c3c0100020202023c3c3c",
+        "length": "0x3c3c0100020202023c3c3c3c",
         "example": "todo",
         "description": "set the canister mode"
     },
@@ -1204,7 +1204,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x022b0000",
-        "length": "0x3c3c0100030303033c3c3c",
+        "length": "0x3c3c0100030303033c3c3c3c",
         "example": "todo",
         "description": "set the canister mode"
     },
