@@ -212,7 +212,7 @@
         "trigger": "?",
         "instruction": "1100100",
         "address": "0x00",
-        "length": "12",
+        "length": "0x0C",
         "example": "todo",
         "description": "get CdTe readout mode (sparse/full)"
     },

@@ -8,7 +8,7 @@ read_temp,0000 0000,1,1001,0x89,—,—,—,—,temp,see lookup,1,1,0,0,0,0,0,0,
 read_software_status,0000 xxxx,1,1010,0x8A,—,—,—,—,status,see lookup,1,1,0,0,0,0,0,0,1,1,1,1,?,0,0x00,0,todo,read software status flags from system
 read_err_flag,0000 xxxx,1,1011,0x8B,—,—,—,—,errors,see lookup,1,1,0,0,1,1,1,1,1,1,1,1,?,0,0x00,0,todo,read error status flags from system
 read_all_asic_params,0000 xxxx,1,11000,0x98,—,—,—,—,params,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,read all ASIC parameters from CdTe ASICs
-read_readout_mode,0000 xxxx,1,11010,0x9A,—,—,—,—,mode,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,1100100,0x00,12,todo,get CdTe readout mode (sparse/full)
+read_readout_mode,0000 xxxx,1,11010,0x9A,—,—,—,—,mode,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,1100100,0x00,0x0C,todo,get CdTe readout mode (sparse/full)
 read_trigger_threshold,0000 xxxx,1,11100,0x9C,—,—,—,—,threshold,see lookup,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,get CdTe trigger threshold (for each strip? For all strips? Use args?)
 read_strip_enable_status,0000 xxxx,1,11101,0x9D,—,—,—,—,enable,8,0,0,0,0,1,1,1,1,1,0,0,0,?,0,0x00,0,todo,check whether CdTe strip is enabled for all 256 total strips
 read_hv,0000 xxxx,1,100001,0xA1,—,—,—,—,value,2,0,0,0,0,1,1,1,1,1,0,0,1,?,0,0x00,0,todo,get the high voltage value (DAC setting for CdTe)
