@@ -21,7 +21,11 @@
     },
     {
         "name":"formatter",
-        "hex":"0x01"
+        "hex":"0x01",
+        "ethernet_interface":
+        {
+            "address":"192.168.1.8"
+        }
     },
     {
         "name":"housekeeping",
@@ -30,8 +34,16 @@
         {
             "protocol":"tcp",
             "address":"192.168.1.16",
-            "port":9090,
+            "port":7,
             "command_path":"housekeeping_commands.json"
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
@@ -42,7 +54,6 @@
         "name":"saas",
         "hex":"0x04"
     },
-    
     {
         "name":"cdtede",
         "hex":"0x08",
@@ -62,6 +73,14 @@
                 "hardware":"spmu001",
                 "command_path":"cdtede_commands.json"
             }
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
@@ -83,6 +102,14 @@
                 "hardware":"spmu001",
                 "command_path":"cdte1_commands.json"
             }
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
@@ -104,6 +131,14 @@
                 "hardware":"spmu001",
                 "command_path":"cdte2_commands.json"
             }
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
@@ -125,6 +160,14 @@
                 "hardware":"spmu001",
                 "command_path":"cdte3_commands.json"
             }
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
@@ -146,6 +189,14 @@
                 "hardware":"spmu001",
                 "command_path":"cdte4_commands.json"
             }
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
@@ -158,6 +209,14 @@
             "data_bits":8,
             "stop_bits":1,
             "command_path":"timepix_commands.json"
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
@@ -179,6 +238,14 @@
                 "hardware":"spmu001",
                 "command_path":"cmos1_commands.json"
             }
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
@@ -200,6 +267,14 @@
                 "hardware":"spmu001",
                 "command_path":"cmos2_commands.json"
             }
+        },
+        "time":
+        {
+            "total_allocation":1,
+            "command":1,
+            "request":1,
+            "reply":8,
+            "idle":1
         }
     },
     {
