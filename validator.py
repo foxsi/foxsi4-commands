@@ -89,7 +89,7 @@ dict_name = "COMMAND_LOOKUP"
 with open(py_filename, "w") as file:
     file.write(dict_name + " = {} \n")
     for i, key in enumerate(keys):
-        file.write(dict_name + "[" + str(key) + "] = (0b" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + ")\n")
+        file.write(dict_name + "[" + str(key) + "] = (" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + ")\n")
 
 # generate files that will generate C++ std::unordered_map for each detector
 c_filename = "commands.h"
@@ -101,7 +101,7 @@ with open(c_filename, "w") as file:
     file.write(struct_dec)
     file.write("std::unordered_map" + map_type + " " + map_name + " = {\n")
     for i, key in enumerate(keys):
-        file.writelines("\t{" + str(key) + ", (struct MemData){0b" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + "}},\n")
+        file.writelines("\t{" + str(key) + ", (struct MemData){" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + "}},\n")
     file.write("};")
 
 # generate .json file
