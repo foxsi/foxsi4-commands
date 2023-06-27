@@ -236,7 +236,7 @@
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cmos1_commands.json"
+                "command_path":"foxsi4-commands/cmos1_commands.json"
             }
         },
         "time":
@@ -265,7 +265,7 @@
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cmos2_commands.json"
+                "command_path":"foxsi4-commands/cmos2_commands.json"
             }
         },
         "time":
