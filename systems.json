@@ -231,8 +231,8 @@
             {
                 "target_logical_address":"0x67",
                 "source_logical_address":"0xfe",
-                "target_path_address":[9,2],
-                "reply_path_address":[0,0,1,3],
+                "target_path_address":[7],
+                "reply_path_address":[0,0,0,3],
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
