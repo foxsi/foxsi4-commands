@@ -180,7 +180,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x4d",
-        "address": "0x38000244",
+        "address": "0x00000244",
         "write_value": "0x00",
         "example": "todo",
         "description": "read CMOS QL ring buffer write pointer"
@@ -211,7 +211,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x4d",
-        "address": "0x38000248",
+        "address": "0x00000248",
         "write_value": "0x00",
         "example": "todo",
         "description": "read CMOS PC ring buffer write pointer"
@@ -273,7 +273,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x4d",
-        "address": "0x380001f4",
+        "address": "0x000001f4",
         "write_value": "0x00",
         "example": "todo",
         "description": "read CMOS FPGA core temperature"
@@ -304,7 +304,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x4d",
-        "address": "0x380001f0",
+        "address": "0x000001f0",
         "write_value": "0x00",
         "example": "todo",
         "description": "read CMOS sensor temperature"
@@ -428,7 +428,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x4d",
-        "address": "0x38000100",
+        "address": "0x0000100",
         "write_value": "0x00",
         "example": "todo",
         "description": "check line time for last init command"
@@ -986,7 +986,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x7d",
-        "address": "0x38000040",
+        "address": "0x00000040",
         "write_value": "0xf0851001",
         "example": "todo",
         "description": "start CMOS initialization"
@@ -1017,7 +1017,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x7d",
-        "address": "0x38000044",
+        "address": "0x00000044",
         "write_value": "0xf0851001",
         "example": "todo",
         "description": "start CMOS training"
@@ -1048,7 +1048,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x7d",
-        "address": "0x38000048",
+        "address": "0x00000048",
         "write_value": "0xf0851001",
         "example": "todo",
         "description": "set the CMOS exposure parameters"
@@ -1110,7 +1110,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x7d",
-        "address": "0x38000050",
+        "address": "0x00000050",
         "write_value": "0xf0851001",
         "example": "todo",
         "description": "start CMOS exposure and data acquisition"
@@ -1141,7 +1141,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x7d",
-        "address": "0x38000054",
+        "address": "0x00000054",
         "write_value": "0xf0851001",
         "example": "todo",
         "description": "stop CMOS exposure"
