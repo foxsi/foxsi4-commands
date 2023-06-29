@@ -3,16 +3,25 @@ import json
 from collections import namedtuple
 
 # files we need
+command_file_xlsx = "command_deck.xlsx"
 command_file = "command_deck.csv"
 systems_file = "all_systems.json"
 
 asics_per_cdte = 4
 
+# convert xlsx to csv
+try:
+    excel_data = pd.read_excel(command_file_xlsx, "all_systems", index_col=None)
+    excel_data.to_csv(command_file, encoding='utf-8', index=False)
+
+except:
+    raise(Exception("couldn't open " + command_file_xlsx))
+
 # read command deck in
 try:
     command_data = pd.read_csv(command_file)
 except:
-    raise Exception("couldn't open command_deck.csv")
+    raise Exception("couldn't open " + command_file)
 
 # read systems list in
 sys_dict = {}
@@ -30,7 +39,7 @@ sys_ids = [sys["id"] for sys in sys_dict]
 head = list(command_data.iloc[0])
 command_systems = [name.upper() for name in head[11:23]]
 
-command_data = command_data[1:]
+command_data = command_data[3:]
 command_data.dropna(axis=0, how="all", inplace=True)
 
 # validate systems
@@ -59,16 +68,18 @@ for i, row in command_data.iterrows():
     arg2_b_str = row[7]
     lookup_instr = row[24]
     lookup_addr = row[25]
-    lookup_len = row[26]
+    lookup_len = row[10]
     lookup_instr = lookup_instr.replace(" ", "")
     full_cmd_str = (rw_b_str + cmd_b_str).replace(" ", "")
-    full_cmd_hex = hex(int(full_cmd_str, 2))
+    # full_cmd_hex = hex(int(full_cmd_str, 2))
+    full_cmd_hex = row[4]
     keys.append(full_cmd_hex)
     values.append((lookup_instr, lookup_addr, lookup_len))
 
 duplicates = set([key for key in keys if keys.count(key) > 1])
 
 if len(set(keys)) != len(keys):
+    print("duplicates: " + str(duplicates))
     raise Exception("command codes are not unique")
 
 
@@ -78,7 +89,7 @@ dict_name = "COMMAND_LOOKUP"
 with open(py_filename, "w") as file:
     file.write(dict_name + " = {} \n")
     for i, key in enumerate(keys):
-        file.write(dict_name + "[" + str(key) + "] = (0b" + str(values[i][0]) + ", " + str(values[i][1]) + ", 0x" + str(values[i][2]) + ")\n")
+        file.write(dict_name + "[" + str(key) + "] = (" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + ")\n")
 
 # generate files that will generate C++ std::unordered_map for each detector
 c_filename = "commands.h"
@@ -90,7 +101,7 @@ with open(c_filename, "w") as file:
     file.write(struct_dec)
     file.write("std::unordered_map" + map_type + " " + map_name + " = {\n")
     for i, key in enumerate(keys):
-        file.writelines("\t{" + str(key) + ", (struct MemData){0b" + str(values[i][0]) + ", " + str(values[i][1]) + ", 0x" + str(values[i][2]) + "}},\n")
+        file.writelines("\t{" + str(key) + ", (struct MemData){" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + "}},\n")
     file.write("};")
 
 # generate .json file
