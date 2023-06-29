@@ -987,7 +987,7 @@
         "trigger": "?",
         "instruction": "0x7d",
         "address": "0x00000040",
-        "write_value": "0xf0851001",
+        "write_value": "0x011085f0",
         "example": "todo",
         "description": "start CMOS initialization"
     },
@@ -1018,7 +1018,7 @@
         "trigger": "?",
         "instruction": "0x7d",
         "address": "0x00000044",
-        "write_value": "0xf0851001",
+        "write_value": "0x011085f0",
         "example": "todo",
         "description": "start CMOS training"
     },
@@ -1049,7 +1049,7 @@
         "trigger": "?",
         "instruction": "0x7d",
         "address": "0x00000048",
-        "write_value": "0xf0851001",
+        "write_value": "0x011085f0",
         "example": "todo",
         "description": "set the CMOS exposure parameters"
     },
@@ -1111,7 +1111,7 @@
         "trigger": "?",
         "instruction": "0x7d",
         "address": "0x00000050",
-        "write_value": "0xf0851001",
+        "write_value": "0x011085f0",
         "example": "todo",
         "description": "start CMOS exposure and data acquisition"
     },
@@ -1142,7 +1142,7 @@
         "trigger": "?",
         "instruction": "0x7d",
         "address": "0x00000054",
-        "write_value": "0xf0851001",
+        "write_value": "0x011085f0",
         "example": "todo",
         "description": "stop CMOS exposure"
     },
