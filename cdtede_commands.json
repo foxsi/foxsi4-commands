@@ -180,7 +180,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x4d",
-        "address": "0x01eb0314",
+        "address": "0x022b0314",
         "write_value": "0x00",
         "example": "todo",
         "description": null
