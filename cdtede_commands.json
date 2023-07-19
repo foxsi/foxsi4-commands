@@ -165,7 +165,7 @@
         "arg2.name": "\u2014",
         "arg2.length [B]": "\u2014",
         "reply.name": "wr_ptr",
-        "reply.length [B]": "0x0c",
+        "reply.length [B]": "0x04",
         "Formatter": "0",
         "Housekeeping": "0",
         "GSE": "0",
@@ -180,7 +180,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x4d",
-        "address": "0x022b0308",
+        "address": "0x022b0314",
         "write_value": "0x00",
         "example": "todo",
         "description": null
