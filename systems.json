@@ -100,7 +100,7 @@
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cdte1_commands.json"
+                "command_path":"foxsi4-commands/cdte1_commands.json"
             }
         },
         "time":
@@ -129,7 +129,7 @@
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cdte2_commands.json"
+                "command_path":"foxsi4-commands/cdte2_commands.json"
             }
         },
         "time":
@@ -158,7 +158,7 @@
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cdte3_commands.json"
+                "command_path":"foxsi4-commands/cdte3_commands.json"
             }
         },
         "time":
@@ -187,7 +187,7 @@
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cdte4_commands.json"
+                "command_path":"foxsi4-commands/cdte4_commands.json"
             }
         },
         "time":
