@@ -35,7 +35,7 @@
             "protocol":"tcp",
             "address":"192.168.1.16",
             "port":7,
-            "command_path":"housekeeping_commands.json"
+            "command_path":"foxsi4-commands/hk_commands.json"
         },
         "time":
         {
