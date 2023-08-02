@@ -6,6 +6,7 @@ from collections import namedtuple
 command_file_xlsx = "command_deck.xlsx"
 command_file = "command_deck.csv"
 systems_file = "all_systems.json"
+output_json_filename = "cmos_commands.json"
 
 asics_per_cdte = 4
 
@@ -118,8 +119,7 @@ json_data = command_data
 json_data.columns = json_head
 
 # write the file
-json_filename = "commands.json"
-with open(json_filename, "w") as file:
+with open(output_json_filename, "w") as file:
     json_result = json_data.to_json(orient="records")
     parsed = json.loads(json_result)
     json_string = json.dumps(parsed, indent=4)
