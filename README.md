@@ -3,7 +3,9 @@ A list of uplink commands for FOXSI-4 onboard systems and associated tools.
 
 ## About this repository
 
-This repository is used to centrally manage changes to the FOXSI-4 flight command list. The full command deck and relevant metadata is in [command_deck.csv](command_deck.csv). A script ([validator.py](validator.py)) exists to validate all commands in the deck (guarantee command uniqueness and applicability to onboard systems) and generate command files for integration in the flight software.
+This repository is used to manage changes to the FOXSI-4 flight command list. There is a full command deck and relevant metadata for each subsystem. A script ([validator.py](validator.py)) exists to generate and validate all commands in the deck (guarantee command uniqueness and applicability to onboard systems) and generate command files for integration in the flight software.
+
+A good entry point is the [systems.json](systems.json) file. This file names, identifies, and captures system-specific interface information for each system the Formatter may interact with. Each commandable system in [systems.json](systems.json) should include an interface section detailing the physical protocol parameters used for the interface, and a path to a command file for that system.
 
 ## Command structure
 
