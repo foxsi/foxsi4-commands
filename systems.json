@@ -96,11 +96,11 @@
                 "target_logical_address":"0xfe",
                 "source_logical_address":"0xfe",
                 "target_path_address":[7,2],
-                "reply_path_address":[0,0,6,3],
+                "reply_path_address":[0,0,1,3],
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cdte1_commands.json"
+                "command_path":"foxsi4-commands/cdte1_commands.json"
             }
         },
         "time":
@@ -125,11 +125,11 @@
                 "target_logical_address":"0xfe",
                 "source_logical_address":"0xfe",
                 "target_path_address":[7,2],
-                "reply_path_address":[0,0,6,3],
+                "reply_path_address":[0,0,1,3],
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cdte2_commands.json"
+                "command_path":"foxsi4-commands/cdte2_commands.json"
             }
         },
         "time":
@@ -154,11 +154,11 @@
                 "target_logical_address":"0xfe",
                 "source_logical_address":"0xfe",
                 "target_path_address":[7,2],
-                "reply_path_address":[0,0,6,3],
+                "reply_path_address":[0,0,1,3],
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cdte3_commands.json"
+                "command_path":"foxsi4-commands/cdte3_commands.json"
             }
         },
         "time":
@@ -183,11 +183,11 @@
                 "target_logical_address":"0xfe",
                 "source_logical_address":"0xfe",
                 "target_path_address":[7,2],
-                "reply_path_address":[0,0,6,3],
+                "reply_path_address":[0,0,1,3],
                 "key":"0x02",
                 "crc_draft":"f",
                 "hardware":"spmu001",
-                "command_path":"cdte4_commands.json"
+                "command_path":"foxsi4-commands/cdte4_commands.json"
             }
         },
         "time":
@@ -208,7 +208,7 @@
             "parity_bits":1,
             "data_bits":8,
             "stop_bits":1,
-            "command_path":"timepix_commands.json"
+            "command_path":"foxsi4-commands/timepix_commands.json"
         },
         "time":
         {
