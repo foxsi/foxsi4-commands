@@ -4,28 +4,28 @@ ping,0000 0000,1,0,0x80,—,—,—,—,pingback,0x04,0,1,1,0,1,1,1,1,1,1,1,1,?,
 read_word,0000 0000,1,1,0x81,addr,4,—,—,word,0x04,0,0,0,0,1,1,1,1,1,1,1,0,?,0x4d,0x00,0x00,todo,read one word from memory at address
 read_block,0000 0000,1,10,0x82,addr,4,len,4,block,0x00,0,0,0,0,1,1,1,1,1,1,1,0,?,0x4d,0x00,0x00,todo,read a block of memory at address
 read_all_hk,0000 0000,1,1000,0x88,—,—,—,—,hk,0xb0,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001a0,0x00,todo,read all housekeeping data from system
-read_last_linetime,0000 0000,1,100000,0xA0,—,—,—,—,linetime,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001a0,0x00,todo,read all housekeeping data from system
-read_linetime_at_pps,0000 0000,1,100001,0xA1,—,—,—,—,linetime,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001a4,0x00,todo,read all housekeeping data from system
-read_ps_cpu_load,0000 0000,1,100010,0xA2,—,—,—,—,load,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001b0,0x00,todo,read software status flags from system
-read_ps_disk_avail,0000 0000,1,100011,0xA3,—,—,—,—,disk,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001b4,0x00,todo,read software status flags from system
-read_software_status,0000 0000,1,101000,0xA8,—,—,—,—,status,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001c0,0x00,todo,read software status flags from system
-read_err_time,0000 0000,1,101001,0xA9,—,—,—,—,time,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001c4,0x00,todo,read software status flags from system
-read_err_flag,0000 0000,1,101010,0xAA,—,—,—,—,error,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001c8,0x00,todo,read error status flags from system
-read_err_training,0000 0000,1,101011,0xAB,—,—,—,—,error,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001cc,0x00,todo,read error status flags from system
-read_data_validity,0000 0000,1,101100,0xAC,—,—,—,—,valid,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001d0,0x00,todo,read error status flags from system
-read_sensor_temp,0000 0000,1,101101,0xAD,—,—,—,—,temp,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001f0,0x00,todo,read error status flags from system
-read_fpga_temp,0000 0000,1,101110,0xAE,—,—,—,—,temp,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001f4,0x00,todo,read error status flags from system
-read_exp_gain_mode,0000 0000,1,110000,0xB0,—,—,—,—,mode,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000200,0x00,todo,read error status flags from system
-read_exp_ql,0000 0000,1,110001,0xB1,—,—,—,—,exp,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000204,0x00,todo,read error status flags from system
-read_exp_pc,0000 0000,1,110010,0xB2,—,—,—,—,exp,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000208,0x00,todo,read error status flags from system
-read_exp_rep_large_n,0000 0000,1,110011,0xB3,—,—,—,—,rep,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x0000020c,0x00,todo,read error status flags from system
-read_exp_rep_small_n,0000 0000,1,110100,0xB4,—,—,—,—,rep,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000210,0x00,todo,read error status flags from system
-read_exp_gain_even,0000 0000,1,110101,0xB5,—,—,—,—,gain,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000214,0x00,todo,read error status flags from system
-read_exp_gain_odd,0000 0000,1,110110,0xB6,—,—,—,—,gain,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000218,0x00,todo,read error status flags from system
-read_gain_n_capture,0000 0000,1,110111,0xB7,—,—,—,—,gain,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x0000021c,0x00,todo,read error status flags from system
-read_ring_ql_rd_ptr,0000 0000,1,10000,0x90,—,—,—,—,rd_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x38000240,0x00,todo,read CMOS QL ring buffer read pointer
-read_ring_pc_rd_ptr,0000 0000,1,10010,0x92,—,—,—,—,rd_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x38000248,0x00,todo,read CMOS PC ring buffer read pointer
-read_ring_wr_ptr,0000 0000,1,10100,0x94,—,—,—,—,wr_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x38000220,0x00,todo,read CMOS PC ring buffer read pointer
+read_last_linetime,0000 0000,1,100000,0xA0,—,—,—,—,linetime,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001a0,0x00,todo,read most recent linetime
+read_linetime_at_pps,0000 0000,1,100001,0xA1,—,—,—,—,linetime,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001a4,0x00,todo,read linetime of most recent PPS received
+read_ps_cpu_load,0000 0000,1,100010,0xA2,—,—,—,—,load,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001b0,0x00,todo,read cpu load
+read_ps_disk_avail,0000 0000,1,100011,0xA3,—,—,—,—,disk,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001b4,0x00,todo,read remaining disk space
+read_software_status,0000 0000,1,101000,0xA8,—,—,—,—,status,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001c0,0x00,todo,check software status
+read_err_time,0000 0000,1,101001,0xA9,—,—,—,—,time,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001c4,0x00,todo,check time of last error
+read_err_flag,0000 0000,1,101010,0xAA,—,—,—,—,error,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001c8,0x00,todo,check error flags
+read_err_training,0000 0000,1,101011,0xAB,—,—,—,—,error,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001cc,0x00,todo,check error in training mode
+read_data_validity,0000 0000,1,101100,0xAC,—,—,—,—,valid,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001d0,0x00,todo,check if data is valid
+read_sensor_temp,0000 0000,1,101101,0xAD,—,—,—,—,temp,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001f0,0x00,todo,read the CMOS sensor temperature
+read_fpga_temp,0000 0000,1,101110,0xAE,—,—,—,—,temp,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x000001f4,0x00,todo,read the FPGA core temperature
+read_exp_gain_mode,0000 0000,1,110000,0xB0,—,—,—,—,mode,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000200,0x00,todo,read exposure gain mode
+read_exp_ql,0000 0000,1,110001,0xB1,—,—,—,—,exp,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000204,0x00,todo,read exposure setting for quick-look data
+read_exp_pc,0000 0000,1,110010,0xB2,—,—,—,—,exp,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000208,0x00,todo,read exposure setting for photon-counting data
+read_exp_rep_large_n,0000 0000,1,110011,0xB3,—,—,—,—,rep,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x0000020c,0x00,todo,read exposure setting for N
+read_exp_rep_small_n,0000 0000,1,110100,0xB4,—,—,—,—,rep,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000210,0x00,todo,read exposure setting for n
+read_exp_gain_even,0000 0000,1,110101,0xB5,—,—,—,—,gain,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000214,0x00,todo,read exposure gain even setting
+read_exp_gain_odd,0000 0000,1,110110,0xB6,—,—,—,—,gain,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000218,0x00,todo,read exposure gain odd setting
+read_gain_n_capture,0000 0000,1,110111,0xB7,—,—,—,—,gain,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x0000021c,0x00,todo,read exposure n capture
+read_ring_ql_rd_ptr,0000 0000,1,10000,0x90,—,—,—,—,rd_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x38000240,0x00,todo,read CMOS QL file read pointer
+read_ring_pc_rd_ptr,0000 0000,1,10010,0x92,—,—,—,—,rd_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x38000248,0x00,todo,read CMOS PC file read pointer
+read_ring_wr_ptr,0000 0000,1,10100,0x94,—,—,—,—,wr_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x38000220,0x00,todo,read CMOS data file write pointer
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 off,0000 0000,0,1000000,0x40,mask,2,—,—,—,0x00,0,1,0,0,0,0,0,0,0,0,0,0,?,0x7d,0x00,0,todo,turn systems off (to power distribution system)
 on,0000 0000,0,1000010,0x42,mask,2,—,—,—,0x00,0,1,0,0,0,0,0,0,0,0,0,0,?,0x7d,0x00,0,todo,turn systems on (to power distribution system)

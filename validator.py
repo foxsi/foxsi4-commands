@@ -3,7 +3,7 @@ import json
 from collections import namedtuple
 
 # files we need
-command_file_xlsx = "command_deck.xlsx"
+command_file_xlsx = "cmos_command_deck.xlsx"
 command_file = "command_deck.csv"
 systems_file = "all_systems.json"
 output_json_filename = "cmos_commands.json"
