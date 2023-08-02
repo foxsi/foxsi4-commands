@@ -90,7 +90,7 @@
         "address": "0x000001a0",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read all housekeeping data from system"
+        "description": "read most recent linetime"
     },
     {
         "name": "read_linetime_at_pps",
@@ -121,7 +121,7 @@
         "address": "0x000001a4",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read all housekeeping data from system"
+        "description": "read linetime of most recent PPS received"
     },
     {
         "name": "read_ps_cpu_load",
@@ -152,7 +152,7 @@
         "address": "0x000001b0",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read software status flags from system"
+        "description": "read cpu load"
     },
     {
         "name": "read_ps_disk_avail",
@@ -183,7 +183,7 @@
         "address": "0x000001b4",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read software status flags from system"
+        "description": "read remaining disk space"
     },
     {
         "name": "read_software_status",
@@ -214,7 +214,7 @@
         "address": "0x000001c0",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read software status flags from system"
+        "description": "check software status"
     },
     {
         "name": "read_err_time",
@@ -245,7 +245,7 @@
         "address": "0x000001c4",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read software status flags from system"
+        "description": "check time of last error"
     },
     {
         "name": "read_err_flag",
@@ -276,7 +276,7 @@
         "address": "0x000001c8",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "check error flags"
     },
     {
         "name": "read_err_training",
@@ -307,7 +307,7 @@
         "address": "0x000001cc",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "check error in training mode"
     },
     {
         "name": "read_data_validity",
@@ -338,7 +338,7 @@
         "address": "0x000001d0",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "check if data is valid"
     },
     {
         "name": "read_sensor_temp",
@@ -369,7 +369,7 @@
         "address": "0x000001f0",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read the CMOS sensor temperature"
     },
     {
         "name": "read_fpga_temp",
@@ -400,7 +400,7 @@
         "address": "0x000001f4",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read the FPGA core temperature"
     },
     {
         "name": "read_exp_gain_mode",
@@ -431,7 +431,7 @@
         "address": "0x00000200",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read exposure gain mode"
     },
     {
         "name": "read_exp_ql",
@@ -462,7 +462,7 @@
         "address": "0x00000204",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read exposure setting for quick-look data"
     },
     {
         "name": "read_exp_pc",
@@ -493,7 +493,7 @@
         "address": "0x00000208",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read exposure setting for photon-counting data"
     },
     {
         "name": "read_exp_rep_large_n",
@@ -524,7 +524,7 @@
         "address": "0x0000020c",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read exposure setting for N"
     },
     {
         "name": "read_exp_rep_small_n",
@@ -555,7 +555,7 @@
         "address": "0x00000210",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read exposure setting for n"
     },
     {
         "name": "read_exp_gain_even",
@@ -586,7 +586,7 @@
         "address": "0x00000214",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read exposure gain even setting"
     },
     {
         "name": "read_exp_gain_odd",
@@ -617,7 +617,7 @@
         "address": "0x00000218",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read exposure gain odd setting"
     },
     {
         "name": "read_gain_n_capture",
@@ -648,7 +648,7 @@
         "address": "0x0000021c",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read error status flags from system"
+        "description": "read exposure n capture"
     },
     {
         "name": "read_ring_ql_rd_ptr",
@@ -679,7 +679,7 @@
         "address": "0x38000240",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read CMOS QL ring buffer read pointer"
+        "description": "read CMOS QL file read pointer"
     },
     {
         "name": "read_ring_pc_rd_ptr",
@@ -710,7 +710,7 @@
         "address": "0x38000248",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read CMOS PC ring buffer read pointer"
+        "description": "read CMOS PC file read pointer"
     },
     {
         "name": "read_ring_wr_ptr",
@@ -741,7 +741,7 @@
         "address": "0x38000220",
         "write_value": "0x00",
         "example": "todo",
-        "description": "read CMOS PC ring buffer read pointer"
+        "description": "read CMOS data file write pointer"
     },
     {
         "name": "off",
