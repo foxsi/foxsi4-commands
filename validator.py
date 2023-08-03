@@ -6,7 +6,7 @@ from collections import namedtuple
 command_file_xlsx = "cmos_command_deck.xlsx"
 command_file = "command_deck.csv"
 systems_file = "all_systems.json"
-output_json_filename = "cmos2_commands.json"
+output_json_filename = "cmos1_commands.json"
 
 asics_per_cdte = 4
 
