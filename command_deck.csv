@@ -24,7 +24,9 @@ read_exp_gain_even,0000 0000,1,110101,0xB5,—,—,—,—,gain,0x04,0,0,0,0,0,0
 read_exp_gain_odd,0000 0000,1,110110,0xB6,—,—,—,—,gain,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000218,0x00,todo,read exposure gain odd setting
 read_gain_n_capture,0000 0000,1,110111,0xB7,—,—,—,—,gain,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x0000021c,0x00,todo,read exposure n capture
 read_ring_ql_rd_ptr,0000 0000,1,10000,0x90,—,—,—,—,rd_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000240,0x00,todo,read CMOS QL file read pointer
+read_ring_ql_size,0000 0000,1,10001,0x91,—,—,—,—,rd_size,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000244,0x00,todo,read CMOS QL size
 read_ring_pc_rd_ptr,0000 0000,1,10010,0x92,—,—,—,—,rd_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000248,0x00,todo,read CMOS PC file read pointer
+read_ring_pc_size,0000 0000,1,10011,0x93,—,—,—,—,rd_size,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x0000024c,0x00,todo,read CMOS PC size
 read_ring_wr_ptr,0000 0000,1,10100,0x94,—,—,—,—,wr_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000220,0x00,todo,read CMOS data file write pointer
 read_ring_start,0000 0000,1,10101,0x95,—,—,—,—,dummy,0x060f,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00001000,0x00,todo,read CMOS data file write pointer
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
