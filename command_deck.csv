@@ -28,6 +28,7 @@ read_ring_ql_size,0000 0000,1,10001,0x91,—,—,—,—,rd_size,0x04,0,0,0,0,0,
 read_ring_pc_rd_ptr,0000 0000,1,10010,0x92,—,—,—,—,rd_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000248,0x00,todo,read CMOS PC file read pointer
 read_ring_pc_size,0000 0000,1,10011,0x93,—,—,—,—,rd_size,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x0000024c,0x00,todo,read CMOS PC size
 read_ring_wr_ptr,0000 0000,1,10100,0x94,—,—,—,—,wr_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000220,0x00,todo,read CMOS data file write pointer
+read_ql_data,0000 0000,1,11111,0x9F,—,—,—,—,wr_ptr,0x04,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00000240,0x00,todo,read CMOS data file write pointer
 read_ring_start,0000 0000,1,10101,0x95,—,—,—,—,dummy,0x060f,0,0,0,0,0,0,0,0,0,1,1,0,?,0x4d,0x00001000,0x00,todo,read CMOS data file write pointer
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 off,0000 0000,0,1000000,0x40,mask,2,—,—,—,0x00,0,1,0,0,0,0,0,0,0,0,0,0,?,0x7d,0x00,0,todo,turn systems off (to power distribution system)
