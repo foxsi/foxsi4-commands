@@ -1389,7 +1389,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x7d",
-        "address": "0x00000180",
+        "address": "0x00000080",
         "write_value": "0x011085f0",
         "example": "todo",
         "description": "stop CMOS exposure"
@@ -1420,7 +1420,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x7d",
-        "address": "0x0000018c",
+        "address": "0x0000008c",
         "write_value": "0x011085f0",
         "example": "todo",
         "description": "stop CMOS exposure"

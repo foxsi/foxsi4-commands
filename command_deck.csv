@@ -47,8 +47,8 @@ set_cmos_params,0000 0000,0,10000,0x10,—,—,—,—,—,0x00,0,0,0,0,0,0,0,0,
 noop,0000 0000,0,10001,0x11,—,—,—,—,—,0x00,0,0,0,0,0,0,0,0,0,1,1,0,?,0x7d,0x00,0x00,todo,unused
 start_cmos_exposure,0000 0000,0,10010,0x12,—,—,—,—,—,0x00,0,0,0,0,0,0,0,0,0,1,1,0,?,0x7d,0x00000050,0x011085f0,todo,start CMOS exposure and data acquisition
 stop_cmos,0000 0000,0,10011,0x13,—,—,—,—,—,0x00,0,0,0,0,0,0,0,0,0,1,1,0,?,0x7d,0x00000054,0x011085f0,todo,stop CMOS exposure
-enable_double_cmds,0000 0000,0,1111,0xF,—,—,—,—,—,0x00,0,0,0,0,0,0,0,0,0,1,1,0,?,0x7d,0x00000180,0x011085f0,todo,stop CMOS exposure
-shutdown_cmos,0000 0000,0,1100,0xC,—,—,—,—,—,0x00,0,0,0,0,0,0,0,0,0,1,1,0,?,0x7d,0x0000018c,0x011085f0,todo,stop CMOS exposure
+enable_double_cmds,0000 0000,0,1111,0xF,—,—,—,—,—,0x00,0,0,0,0,0,0,0,0,0,1,1,0,?,0x7d,0x00000080,0x011085f0,todo,stop CMOS exposure
+shutdown_cmos,0000 0000,0,1100,0xC,—,—,—,—,—,0x00,0,0,0,0,0,0,0,0,0,1,1,0,?,0x7d,0x0000008c,0x011085f0,todo,stop CMOS exposure
 set_readout_mode,0000 0000,0,11010,0x1A,mode,1,—,—,—,0x00,0,0,0,0,1,1,1,1,1,0,0,0,?,0x7d,0x00,0,todo,change the CdTe readout mode (sparse/full)
 set_trigger_thresholds,0000 0000,0,11100,0x1C,thresholds,?,—,—,—,0x00,0,0,0,0,1,1,1,1,1,0,0,0,?,0x7d,0x00,0,todo,set CdTe trigger thresholds (for each strip? For all strips?)
 set_strip_enable_status,0000 0000,0,11101,0x1D,status,?,—,—,—,0x00,0,0,0,0,1,1,1,1,1,0,0,0,?,0x7d,0x00,0,todo,set enable/disable mask for CdTe strips
