@@ -24,7 +24,7 @@
         "CMOS2": "0",
         "Timepix": "0",
         "trigger": "?",
-        "instruction": "0x4d",
+        "instruction": "0x03",
         "address": "0x0f",
         "write_value": "0x00",
         "example": "todo",

@@ -1,8 +1,8 @@
 Unnamed: 0,Unnamed: 1,command,Unnamed: 3,Unnamed: 4,arg1,Unnamed: 6,arg2,Unnamed: 8,reply,Unnamed: 10,applicability,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed: 19,Unnamed: 20,Unnamed: 21,Unnamed: 22,Unnamed: 23,lookup entries,Unnamed: 25,Unnamed: 26,Unnamed: 27,Unnamed: 28
 name,CdTe select,R=1/W=0,bitstring,hex,name,length [B],name,length [B],name,length [B],Formatter,Housekeeping,GSE,EVTM,CdTe1,CdTe2,CdTe3,CdTe4,CdTeDE,CMOS1,CMOS2,Timepix,trigger,instruction,address,write_value,example,description
 ping,0000 0000,1,0,0x80,—,—,—,—,pingback,0x04,0,1,1,0,1,1,1,1,1,1,1,1,?,0x4d,0x00,0x00,todo,test communication with system
-read_power_output07_mask,0000 0000,1,1001110,0xCE,—,—,—,—,outputs,0x01,0,1,0,0,0,0,0,0,0,0,0,0,?,0x4d,0x0e,0x00,todo,get power output on/off mask from power distribution system
-read_power_output89_mask,0000 0000,1,1001111,0xCF,—,—,—,—,outputs,0x01,0,1,0,0,0,0,0,0,0,0,0,0,?,0x4d,0x0f,0x00,todo,get power output on/off mask from power distribution system
+read_power_output07_mask,0000 0000,1,1001110,0xCE,—,—,—,—,outputs,0x01,0,1,0,0,0,0,0,0,0,0,0,0,?,0x03,0x0e,0x00,todo,get power output on/off mask from power distribution system
+read_power_output89_mask,0000 0000,1,1001111,0xCF,—,—,—,—,outputs,0x01,0,1,0,0,0,0,0,0,0,0,0,0,?,0x03,0x0f,0x00,todo,get power output on/off mask from power distribution system
 read_attenuator_insert,0000 0000,1,111001,0xB9,—,—,—,—,bool,0x01,1,0,0,0,0,0,0,0,0,0,0,0,?,0x4d,0x00,0x00,todo,check if attenuator ring has been inserted
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 off,0000 0000,0,0,0x0,mask,2,—,—,—,0x00,0,1,0,0,0,0,0,0,0,0,0,0,?,0x00,0x00,0x00,todo,turn systems off (to power distribution system)
