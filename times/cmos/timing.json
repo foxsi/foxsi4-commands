@@ -1,0 +1,8 @@
+{
+    "total_allocation":5400,
+    "command":1,
+    "request":1,
+    "reply":8,
+    "idle":1,
+    "receive_timeout_millis":10
+}

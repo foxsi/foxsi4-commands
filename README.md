@@ -72,3 +72,10 @@ $ git add <all> <the> <files> <you> <edited>
 $ git commit -m "<a short messages describing your edits>"
 $ git push
 ```
+
+## Comments
+- SpaceWire reply messages from SPMU-001 always (system-agnostic) have a 24 B header before data begins. This is fixed-length because:
+    - SPMU-001 Ethernet header is fixed size;
+    - Reply SpaceWire path address is removed by the device before Ethernet forwarding. So the remaining SpaceWire contents are all of fixed size.
+- Would be good to factor `ethernet_interface` key out of `systems.json` into its own file. These are not unique to system, and would be less copy-paste-y.
+- Ring buffer definitions (start address, size, frame size) are below SpaceWire in the hierarchy. There is no other DMA-capable interface.

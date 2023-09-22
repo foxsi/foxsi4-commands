@@ -1,0 +1,6 @@
+{
+    "protocol":"tcp",
+    "address":"224.1.1.0",
+    "port":8888,
+    "max_payload_bytes":2000
+}

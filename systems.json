@@ -2,52 +2,30 @@
     {
         "name":"gse",
         "hex":"0x00",
-        "ethernet_interface":
-        {
-            "protocol":"udp",
-            "address":"192.168.1.18",
-            "port":9999,
-            "max_payload_bytes":2000
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/gse/ethernet_interface.json"
     },
     {
-        "name":"evtm",
+        "name":"downlink",
         "hex":"0x05",
-        "ethernet_interface":
-        {
-            "protocol":"udp",
-            "address":"192.168.1.20",
-            "port":65535,
-            "max_payload_bytes":2000
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/evtm/ethernet_interface.json"
+    },
+    {
+        "name":"uplink",
+        "hex":"0x05",
+        "uart":"foxsi4-commands/uarts/uplink/uart_interface.json"
     },
     {
         "name":"formatter",
         "hex":"0x01",
-        "ethernet_interface":
-        {
-            "address":"192.168.1.8"
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/local/ethernet_interface.json"
     },
     {
         "name":"housekeeping",
         "hex":"0x02",
-        "ethernet_interface":
-        {
-            "protocol":"tcp",
-            "address":"192.168.1.16",
-            "port":7,
-            "max_payload_bytes":256,
-            "command_path":"housekeeping_commands.json"
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/housekeeping/ethernet_interface.json",
+        "command_type":"ethernet",
+        "commands":"foxsi4-commands/commands/housekeeping/housekeeping_commands.json",
+        "timing":"foxsi4-commands/times/housekeeping/timing.json"
     },
     {
         "name":"power",
@@ -60,232 +38,72 @@
     {
         "name":"cdtede",
         "hex":"0x08",
-        "ethernet_interface":
-        {
-            "protocol":"tcp",
-            "address":"192.168.1.100",
-            "port":10030,
-            "max_payload_bytes":2000,
-            "spacewire_interface": 
-            {
-                "target_logical_address":"0xfe",
-                "source_logical_address":"0xfe",
-                "target_path_address":[1,2],
-                "reply_path_address":[0,0,1,3],
-                "key":"0x02",
-                "crc_draft":"f",
-                "hardware":"spmu001",
-                "command_path":"foxsi4-commands/cdtede_commands.json"
-            }
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "command_type":"spacewire",
+        "commands":"foxsi4-commands/commands/cdtede/cdtede_commands.json"
     },
     {
         "name":"cdte1",
         "hex":"0x09",
-        "ethernet_interface":
-        {
-            "protocol":"tcp",
-            "address":"192.168.1.100",
-            "port":10030,
-            "max_payload_bytes":2000,
-            "spacewire_interface": 
-            {
-                "target_logical_address":"0xfe",
-                "source_logical_address":"0xfe",
-                "target_path_address":[1,2],
-                "reply_path_address":[0,0,1,3],
-                "key":"0x02",
-                "crc_draft":"f",
-                "hardware":"spmu001",
-                "command_path":"foxsi4-commands/cdte1_commands.json"
-            }
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "command_type":"spacewire",
+        "commands":"foxsi4-commands/commands/cdte1/cdte1_commands.json",
+        "timing":"foxsi4-commands/times/cdte/timing.json"
     },
     {
         "name":"cdte2",
         "hex":"0x0a",
-        "ethernet_interface":
-        {
-            "protocol":"tcp",
-            "address":"192.168.1.100",
-            "port":10030,
-            "max_payload_bytes":2000,
-            "spacewire_interface": 
-            {
-                "target_logical_address":"0xfe",
-                "source_logical_address":"0xfe",
-                "target_path_address":[1,2],
-                "reply_path_address":[0,0,1,3],
-                "key":"0x02",
-                "crc_draft":"f",
-                "hardware":"spmu001",
-                "command_path":"foxsi4-commands/cdte2_commands.json"
-            }
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "command_type":"spacewire",
+        "commands":"foxsi4-commands/commands/cdte2/cdte2_commands.json",
+        "timing":"foxsi4-commands/times/cdte/timing.json"
     },
     {
         "name":"cdte3",
         "hex":"0x0b",
-        "ethernet_interface":
-        {
-            "protocol":"tcp",
-            "address":"192.168.1.100",
-            "port":10030,
-            "max_payload_bytes":2000,
-            "spacewire_interface": 
-            {
-                "target_logical_address":"0xfe",
-                "source_logical_address":"0xfe",
-                "target_path_address":[1,2],
-                "reply_path_address":[0,0,1,3],
-                "key":"0x02",
-                "crc_draft":"f",
-                "hardware":"spmu001",
-                "command_path":"foxsi4-commands/cdte3_commands.json"
-            }
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "command_type":"spacewire",
+        "commands":"foxsi4-commands/commands/cdte3/cdte3_commands.json",
+        "timing":"foxsi4-commands/times/cdte/timing.json"
     },
     {
         "name":"cdte4",
         "hex":"0x0c",
-        "ethernet_interface":
-        {
-            "protocol":"tcp",
-            "address":"192.168.1.100",
-            "port":10030,
-            "max_payload_bytes":2000,
-            "spacewire_interface": 
-            {
-                "target_logical_address":"0xfe",
-                "source_logical_address":"0xfe",
-                "target_path_address":[1,2],
-                "reply_path_address":[0,0,1,3],
-                "key":"0x02",
-                "crc_draft":"f",
-                "hardware":"spmu001",
-                "command_path":"foxsi4-commands/cdte4_commands.json"
-            }
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "command_type":"spacewire",
+        "commands":"foxsi4-commands/commands/cdte4/cdte4_commands.json",
+        "timing":"foxsi4-commands/times/cdte/timing.json"
     },
     {
         "name":"timepix",
         "hex":"0x0d",
-        "uart_interface":
-        {
-            "baud_rate":192000,
-            "parity_bits":1,
-            "data_bits":8,
-            "stop_bits":1,
-            "command_path":"foxsi4-commands/timepix_commands.json"
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "uart_interface":"foxsi4-commands/uarts/timepix/uart_interface.json",
+        "command_type":"uart",
+        "commands":"foxsi4-commands/commands/timepix/timepix_commands.json",
+        "timing":"foxsi4-commands/times/timepix/timing.json"
     },
     {
         "name":"cmos1",
         "hex":"0x0e",
-        "ethernet_interface":
-        {
-            "protocol":"tcp",
-            "address":"192.168.1.100",
-            "port":10030,
-            "max_payload_bytes":2000,
-            "spacewire_interface": 
-            {
-                "target_logical_address":"0x67",
-                "source_logical_address":"0xfe",
-                "target_path_address":[9],
-                "reply_path_address":[0,0,0,3],
-                "key":"0x02",
-                "crc_draft":"f",
-                "hardware":"spmu001",
-                "command_path":"foxsi4-commands/cmos1_commands.json"
-            }
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cmos1/spacewire_interface.json",
+        "command_type":"spacewire",
+        "commands":"foxsi4-commands/commands/cmos1/cmos1_commands.json",
+        "timing":"foxsi4-commands/times/cmos/timing.json"
     },
     {
         "name":"cmos2",
         "hex":"0x0f",
-        "ethernet_interface":
-        {
-            "protocol":"tcp",
-            "address":"192.168.1.100",
-            "port":10030,
-            "max_payload_bytes":2000,
-            "spacewire_interface": 
-            {
-                "target_logical_address":"0x67",
-                "source_logical_address":"0xfe",
-                "target_path_address":[10,2],
-                "reply_path_address":[0,0,1,3],
-                "key":"0x02",
-                "crc_draft":"f",
-                "hardware":"spmu001",
-                "command_path":"foxsi4-commands/cmos2_commands.json"
-            }
-        },
-        "time":
-        {
-            "total_allocation":1,
-            "command":1,
-            "request":1,
-            "reply":8,
-            "idle":1
-        }
+        "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cmos2/spacewire_interface.json",
+        "command_type":"spacewire",
+        "commands":"foxsi4-commands/commands/cmos2/cmos2_commands.json",
+        "timing":"foxsi4-commands/times/cmos/timing.json"
     },
     {
         "name":"broadcast",
