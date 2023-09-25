@@ -11,7 +11,7 @@ cwd = os.getcwd()
 def substitute_json(json_dict:dict):
     for key in json_dict.keys():
         val = json_dict[key]
-        if isinstance(val, str):
+        if isinstance(val, str):        # case where the rhs of key is a path
             if "/" in val and key != "commands":
                 try:
                     sub_dict = {}
@@ -23,7 +23,7 @@ def substitute_json(json_dict:dict):
                     substitute_json(sub_dict)
                 except:
                     raise Exception("tried to open the wrong thing :(")
-        elif isinstance(val, dict):
+        elif isinstance(val, dict):     # case where the rhs of key is more nested JSON
             for subkey in val.keys():
                 subval = val[subkey]
                 if "/" in subval and subkey != "commands":
@@ -46,10 +46,11 @@ try:
 except:
     raise Exception("couldn't open systems list")
 
-additions = {}
+# look through the file, substituting in JSON where paths where
 for item in sys_dict:
     substitute_json(item)
         
+# write the output to output (provided above)
 with open(output, "w") as result_file:
     json_string = json.dump(sys_dict, result_file, indent=4)
 
