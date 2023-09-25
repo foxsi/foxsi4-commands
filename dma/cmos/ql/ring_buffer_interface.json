@@ -1,5 +1,5 @@
 {
-    "ring_frame_size_bytes":492896,
+    "ring_frame_size_bytes":492544,
     "ring_start_address":4096,
     "frames_per_ring":32
 }

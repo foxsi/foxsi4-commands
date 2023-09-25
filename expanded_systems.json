@@ -346,12 +346,12 @@
             "max_payload_bytes": 2000,
             "ring_buffer_interface": {
                 "pc": {
-                    "ring_frame_size_bytes": 591200,
+                    "ring_frame_size_bytes": 590848,
                     "ring_start_address": 71307264,
                     "frames_per_ring": 32
                 },
                 "ql": {
-                    "ring_frame_size_bytes": 492896,
+                    "ring_frame_size_bytes": 492544,
                     "ring_start_address": 4096,
                     "frames_per_ring": 32
                 }
@@ -398,12 +398,12 @@
             "max_payload_bytes": 2000,
             "ring_buffer_interface": {
                 "pc": {
-                    "ring_frame_size_bytes": 591200,
+                    "ring_frame_size_bytes": 590848,
                     "ring_start_address": 71307264,
                     "frames_per_ring": 32
                 },
                 "ql": {
-                    "ring_frame_size_bytes": 492896,
+                    "ring_frame_size_bytes": 492544,
                     "ring_start_address": 4096,
                     "frames_per_ring": 32
                 }
