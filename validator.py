@@ -85,25 +85,25 @@ if len(set(keys)) != len(keys):
 
 
 # generate files that will generate Dict for each detector
-py_filename = "commands.py"
-dict_name = "COMMAND_LOOKUP"
-with open(py_filename, "w") as file:
-    file.write(dict_name + " = {} \n")
-    for i, key in enumerate(keys):
-        file.write(dict_name + "[" + str(key) + "] = (" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + ")\n")
+# py_filename = "commands.py"
+# dict_name = "COMMAND_LOOKUP"
+# with open(py_filename, "w") as file:
+#     file.write(dict_name + " = {} \n")
+#     for i, key in enumerate(keys):
+#         file.write(dict_name + "[" + str(key) + "] = (" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + ")\n")
 
 # generate files that will generate C++ std::unordered_map for each detector
-c_filename = "commands.h"
-struct_dec = "struct MemData {\n\tuint8_t instruction;\n\tuint32_t addr;\n\tuint32_t data;\n};\n"
-map_name = "COMMAND_LOOKUP"
-map_type = "<char, MemData>"
-with open(c_filename, "w") as file:
-    file.write("#include <unordered_map>\n\n")
-    file.write(struct_dec)
-    file.write("std::unordered_map" + map_type + " " + map_name + " = {\n")
-    for i, key in enumerate(keys):
-        file.writelines("\t{" + str(key) + ", (struct MemData){" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + "}},\n")
-    file.write("};")
+# c_filename = "commands.h"
+# struct_dec = "struct MemData {\n\tuint8_t instruction;\n\tuint32_t addr;\n\tuint32_t data;\n};\n"
+# map_name = "COMMAND_LOOKUP"
+# map_type = "<char, MemData>"
+# with open(c_filename, "w") as file:
+#     file.write("#include <unordered_map>\n\n")
+#     file.write(struct_dec)
+#     file.write("std::unordered_map" + map_type + " " + map_name + " = {\n")
+#     for i, key in enumerate(keys):
+#         file.writelines("\t{" + str(key) + ", (struct MemData){" + str(values[i][0]) + ", " + str(values[i][1]) + ", " + str(values[i][2]) + "}},\n")
+#     file.write("};")
 
 # generate .json file
 # edit header for json variable naming

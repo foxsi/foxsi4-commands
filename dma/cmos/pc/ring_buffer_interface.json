@@ -1,5 +1,7 @@
 {
-    "ring_frame_size_bytes":590848,
-    "ring_start_address":71307264,
-    "frames_per_ring":32
+    "ring_frame_size_bytes":"0x90400",
+    "ring_start_address":"0x4401000",
+    "frames_per_ring":"0x20",
+    "ring_write_pointer_address":"0x248",
+    "ring_write_pointer_width":"0x04"
 }

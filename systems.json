@@ -39,7 +39,7 @@
         "name":"cdtede",
         "hex":"0x08",
         "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
-        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdtede/spacewire_interface.json",
         "command_type":"spacewire",
         "commands":"foxsi4-commands/commands/cdtede/cdtede_commands.json"
     },
@@ -47,7 +47,7 @@
         "name":"cdte1",
         "hex":"0x09",
         "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
-        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte1/spacewire_interface.json",
         "command_type":"spacewire",
         "commands":"foxsi4-commands/commands/cdte1/cdte1_commands.json",
         "timing":"foxsi4-commands/times/cdte/timing.json"
@@ -56,7 +56,7 @@
         "name":"cdte2",
         "hex":"0x0a",
         "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
-        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte2/spacewire_interface.json",
         "command_type":"spacewire",
         "commands":"foxsi4-commands/commands/cdte2/cdte2_commands.json",
         "timing":"foxsi4-commands/times/cdte/timing.json"
@@ -65,7 +65,7 @@
         "name":"cdte3",
         "hex":"0x0b",
         "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
-        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte3/spacewire_interface.json",
         "command_type":"spacewire",
         "commands":"foxsi4-commands/commands/cdte3/cdte3_commands.json",
         "timing":"foxsi4-commands/times/cdte/timing.json"
@@ -74,7 +74,7 @@
         "name":"cdte4",
         "hex":"0x0c",
         "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
-        "spacewire_interface":"foxsi4-commands/spacewires/cdte/spacewire_interface.json",
+        "spacewire_interface":"foxsi4-commands/spacewires/cdte4/spacewire_interface.json",
         "command_type":"spacewire",
         "commands":"foxsi4-commands/commands/cdte4/cdte4_commands.json",
         "timing":"foxsi4-commands/times/cdte/timing.json"

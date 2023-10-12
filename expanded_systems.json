@@ -53,7 +53,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10
+            "receive_timeout_millis": 10,
+            "intercommand_spacing_millis": 3
         }
     },
     {
@@ -92,14 +93,7 @@
             "static_header_size": 24,
             "static_footer_size": 0,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 2000,
-            "ring_buffer_interface": {
-                "pc": {
-                    "ring_frame_size_bytes": 32780,
-                    "ring_start_address": 4194304,
-                    "frames_per_ring": 980
-                }
-            }
+            "max_payload_bytes": 2000
         },
         "command_type": "spacewire",
         "commands": "foxsi4-commands/commands/cdtede/cdtede_commands.json"
@@ -135,9 +129,11 @@
             "max_payload_bytes": 2000,
             "ring_buffer_interface": {
                 "pc": {
-                    "ring_frame_size_bytes": 32780,
-                    "ring_start_address": 4194304,
-                    "frames_per_ring": 980
+                    "ring_frame_size_bytes": "0x800c",
+                    "ring_start_address": "0x00400000",
+                    "frames_per_ring": "0x3d4",
+                    "ring_write_pointer_address": "0x022b0314",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -149,7 +145,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10
+            "receive_timeout_millis": 10,
+            "intercommand_spacing_millis": 3
         }
     },
     {
@@ -183,9 +180,11 @@
             "max_payload_bytes": 2000,
             "ring_buffer_interface": {
                 "pc": {
-                    "ring_frame_size_bytes": 32780,
-                    "ring_start_address": 4194304,
-                    "frames_per_ring": 980
+                    "ring_frame_size_bytes": "0x800c",
+                    "ring_start_address": "0x02300000",
+                    "frames_per_ring": "0x3d4",
+                    "ring_write_pointer_address": "0x041b0318",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -197,7 +196,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10
+            "receive_timeout_millis": 10,
+            "intercommand_spacing_millis": 3
         }
     },
     {
@@ -231,9 +231,11 @@
             "max_payload_bytes": 2000,
             "ring_buffer_interface": {
                 "pc": {
-                    "ring_frame_size_bytes": 32780,
-                    "ring_start_address": 4194304,
-                    "frames_per_ring": 980
+                    "ring_frame_size_bytes": "0x800c",
+                    "ring_start_address": "0x04200000",
+                    "frames_per_ring": "0x3d4",
+                    "ring_write_pointer_address": "0x060b0314",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -245,7 +247,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10
+            "receive_timeout_millis": 10,
+            "intercommand_spacing_millis": 3
         }
     },
     {
@@ -279,9 +282,11 @@
             "max_payload_bytes": 2000,
             "ring_buffer_interface": {
                 "pc": {
-                    "ring_frame_size_bytes": 32780,
-                    "ring_start_address": 4194304,
-                    "frames_per_ring": 980
+                    "ring_frame_size_bytes": "0x800c",
+                    "ring_start_address": "0x06100000",
+                    "frames_per_ring": "0x3d4",
+                    "ring_write_pointer_address": "0x07fb0314",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -293,7 +298,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10
+            "receive_timeout_millis": 10,
+            "intercommand_spacing_millis": 3
         }
     },
     {
@@ -313,7 +319,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10
+            "receive_timeout_millis": 10,
+            "intercommand_spacing_millis": 3
         }
     },
     {
@@ -346,14 +353,18 @@
             "max_payload_bytes": 2000,
             "ring_buffer_interface": {
                 "pc": {
-                    "ring_frame_size_bytes": 590848,
-                    "ring_start_address": 71307264,
-                    "frames_per_ring": 32
+                    "ring_frame_size_bytes": "0x90400",
+                    "ring_start_address": "0x4401000",
+                    "frames_per_ring": "0x20",
+                    "ring_write_pointer_address": "0x248",
+                    "ring_write_pointer_width": "0x04"
                 },
                 "ql": {
-                    "ring_frame_size_bytes": 492544,
-                    "ring_start_address": 4096,
-                    "frames_per_ring": 32
+                    "ring_frame_size_bytes": "0x78400",
+                    "ring_start_address": "0x1000",
+                    "frames_per_ring": "0x20",
+                    "ring_write_pointer_address": "0x240",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -365,7 +376,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10
+            "receive_timeout_millis": 10,
+            "intercommand_spacing_millis": 3
         }
     },
     {
@@ -398,14 +410,18 @@
             "max_payload_bytes": 2000,
             "ring_buffer_interface": {
                 "pc": {
-                    "ring_frame_size_bytes": 590848,
-                    "ring_start_address": 71307264,
-                    "frames_per_ring": 32
+                    "ring_frame_size_bytes": "0x90400",
+                    "ring_start_address": "0x4401000",
+                    "frames_per_ring": "0x20",
+                    "ring_write_pointer_address": "0x248",
+                    "ring_write_pointer_width": "0x04"
                 },
                 "ql": {
-                    "ring_frame_size_bytes": 492544,
-                    "ring_start_address": 4096,
-                    "frames_per_ring": 32
+                    "ring_frame_size_bytes": "0x78400",
+                    "ring_start_address": "0x1000",
+                    "frames_per_ring": "0x20",
+                    "ring_write_pointer_address": "0x240",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -417,7 +433,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10
+            "receive_timeout_millis": 10,
+            "intercommand_spacing_millis": 3
         }
     },
     {

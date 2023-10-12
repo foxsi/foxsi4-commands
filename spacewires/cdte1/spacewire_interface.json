@@ -11,6 +11,6 @@
     "mean_speed_bps":0,
     "max_payload_bytes":2000,
     "ring_buffer_interface":{
-        "pc":"foxsi4-commands/dma/cdte/pc/ring_buffer_interface.json"
+        "pc":"foxsi4-commands/dma/cdte1/pc/ring_buffer_interface.json"
     }
 }
