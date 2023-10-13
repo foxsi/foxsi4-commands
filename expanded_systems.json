@@ -43,7 +43,11 @@
             "protocol": "tcp",
             "address": "192.168.1.16",
             "port": 7777,
-            "max_payload_bytes": 512
+            "max_payload_bytes": 512,
+            "mean_speed_bps": 100000,
+            "frame_size_bytes": 256,
+            "static_header_size": 0,
+            "static_footer_size": 0
         },
         "command_type": "ethernet",
         "commands": "foxsi4-commands/commands/housekeeping/housekeeping_commands.json",
