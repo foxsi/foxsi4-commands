@@ -3,10 +3,10 @@ import json
 from collections import namedtuple
 
 # files we need
-command_file_xlsx = "cmos_command_deck.xlsx"
+command_file_xlsx = "commands/housekeeping/housekeeping_command_deck.xlsx"
 command_file = "command_deck.csv"
 systems_file = "all_systems.json"
-output_json_filename = "cmos2_commands.json"
+output_json_filename = "commands/housekeeping/housekeeping_commands.json"
 
 asics_per_cdte = 4
 
