@@ -41,7 +41,8 @@
         "ethernet_interface":"foxsi4-commands/ethernets/spmu-001/ethernet_interface.json",
         "spacewire_interface":"foxsi4-commands/spacewires/cdtede/spacewire_interface.json",
         "command_type":"spacewire",
-        "commands":"foxsi4-commands/commands/cdtede/cdtede_commands.json"
+        "commands":"foxsi4-commands/commands/cdtede/cdtede_commands.json",
+        "timing":"foxsi4-commands/times/cdte/timing.json"
     },
     {
         "name":"cdte1",

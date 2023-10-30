@@ -7,9 +7,9 @@
     "crc_draft":"f",
     "hardware":"spmu-001",
     "static_header_size":24,
-    "static_footer_size":0,
+    "static_footer_size":1,
     "mean_speed_bps":0,
-    "max_payload_bytes":2000,
+    "max_payload_bytes":1800,
     "ring_buffer_interface":{
         "pc":"foxsi4-commands/dma/cdte4/pc/ring_buffer_interface.json"
     }
