@@ -1,14 +1,23 @@
 import pandas as pd
-import json
+import json, sys
 from collections import namedtuple
 
 # files we need
-command_file_xlsx = "commands/housekeeping/housekeeping_command_deck.xlsx"
+command_file_xlsx = "commands/cdte1/cdte1_command_deck.xlsx"
 command_file = "command_deck.csv"
 systems_file = "all_systems.json"
-output_json_filename = "commands/housekeeping/housekeeping_commands.json"
+output_json_filename = "commands/cdte1/cdte1_commands.json"
 
-asics_per_cdte = 4
+if len(sys.argv) == 2:
+    command_file_xlsx = sys.argv[1]
+    # output_json_filename = command_file_xlsx[0:command_file_xlsx.rfind(".")] + ".json"
+    output_json_filename = command_file_xlsx
+    output_json_filename = output_json_filename.replace("xlsx", "json")
+    output_json_filename = output_json_filename.replace("_deck", "s")
+
+    print("writing to " + output_json_filename)
+elif len(sys.argv) == 1:
+    print("using default file names")
 
 # convert xlsx to csv
 try:

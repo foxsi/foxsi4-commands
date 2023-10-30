@@ -2,8 +2,8 @@ import json, os
 from collections import namedtuple
 
 # files we need
-source = "foxsi4-commands/systems.json"
-output = "foxsi4-commands/expanded_systems.json"
+source = "foxsi4-commands/template_systems.json"
+output = "foxsi4-commands/systems.json"
 
 cwd = os.getcwd()
 
