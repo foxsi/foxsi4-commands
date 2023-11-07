@@ -22,7 +22,7 @@ def substitute_json(json_dict:dict):
                     json_dict[key] = sub_dict
                     substitute_json(sub_dict)
                 except:
-                    raise Exception("tried to open the wrong thing :(")
+                    print("could not parse file at " + val)
         elif isinstance(val, dict):     # case where the rhs of key is more nested JSON
             for subkey in val.keys():
                 subval = val[subkey]

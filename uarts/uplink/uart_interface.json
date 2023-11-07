@@ -1,4 +1,5 @@
 {
+    "tty_path":"/dev/ttyAMA4",
     "baud_rate":192000,
     "parity_bits":1,
     "data_bits":8,

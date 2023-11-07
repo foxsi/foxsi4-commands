@@ -23,6 +23,7 @@
         "name": "uplink",
         "hex": "0x05",
         "uart": {
+            "tty_path": "/dev/ttyAMA4",
             "baud_rate": 192000,
             "parity_bits": 1,
             "data_bits": 8,
@@ -319,6 +320,7 @@
         "name": "timepix",
         "hex": "0x0d",
         "uart_interface": {
+            "tty_path": "/dev/ttyAMA2",
             "baud_rate": 192000,
             "parity_bits": 1,
             "data_bits": 8,
@@ -363,7 +365,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 2000,
+            "max_payload_bytes": 1800,
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x90400",
@@ -420,7 +422,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 2000,
+            "max_payload_bytes": 1800,
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x90400",
