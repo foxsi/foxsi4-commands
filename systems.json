@@ -197,7 +197,7 @@
                     "ring_frame_size_bytes": "0x800c",
                     "ring_start_address": "0x02300000",
                     "frames_per_ring": "0x3d4",
-                    "ring_write_pointer_address": "0x041b0318",
+                    "ring_write_pointer_address": "0x041b0314",
                     "ring_write_pointer_width": "0x04"
                 }
             }
