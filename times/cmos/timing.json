@@ -4,6 +4,7 @@
     "request":1,
     "reply":8,
     "idle":1,
+    "retry_max_count":5,
     "receive_timeout_millis":10,
     "intercommand_spacing_millis":3
 }

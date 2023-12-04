@@ -1,9 +1,10 @@
-import json, os
+import json, os, copy, ipaddress
 from collections import namedtuple
 
 # files we need
 source = "foxsi4-commands/template_systems.json"
 output = "foxsi4-commands/systems.json"
+mock = "foxsi4-commands/foxsimile_systems.json"
 
 cwd = os.getcwd()
 
@@ -37,7 +38,34 @@ def substitute_json(json_dict:dict):
                         substitute_json(sub_dict)
                     except:
                         raise Exception("tried to open the wrong thing :(")
-    
+
+# create a localhost version of an IPv4 address, preserving LSB of the original address. Ignores multicast.
+def set_local_ip(addr:str):
+    if isinstance(addr, str):
+        try:
+            ipv4addr = ipaddress.IPv4Network(addr)
+            if ipv4addr.is_multicast:
+                return addr
+            addr_split = addr.rsplit('.', 1)
+            local_addr = "127.0.0." + addr_split[1]
+            print("ip ", addr, "\twill have local value ", local_addr)
+            return local_addr
+        except ValueError:
+            return addr
+
+# recursively trawls a JSON dict and substitutes localhost IP addresses.
+def substitute_ip(json_dict:dict):
+    for key in json_dict.keys():
+        val = json_dict[key]
+        if isinstance(val, dict):
+            val = substitute_ip(val)
+            json_dict[key] = val
+        elif isinstance(val, str):
+            val = set_local_ip(val)
+            json_dict[key] = val
+    return json_dict
+            
+            
 
 sys_dict = {}
 try:
@@ -50,8 +78,16 @@ except:
 for item in sys_dict:
     substitute_json(item)
         
-# write the output to output (provided above)
+# write the synthesized json to output (provided above)
 with open(output, "w") as result_file:
     json_string = json.dump(sys_dict, result_file, indent=4)
 
+    # create a local-address based mocking version of the same file
+    with open(mock, "w") as mock_file:
+        local_dict = copy.deepcopy(sys_dict)
+        for item in local_dict:
+            substitute_ip(item)
+        local_string = json.dump(local_dict, mock_file, indent=4)
+
 print("wrote output to " + output)
+print("wrote mocking output to " + mock)
