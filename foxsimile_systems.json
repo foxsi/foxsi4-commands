@@ -4,7 +4,7 @@
         "hex": "0x00",
         "ethernet_interface": {
             "protocol": "udp",
-            "address": "192.168.1.118",
+            "address": "127.0.0.118",
             "port": 9999,
             "max_payload_bytes": 2000
         }
@@ -34,7 +34,7 @@
         "name": "formatter",
         "hex": "0x01",
         "ethernet_interface": {
-            "address": "192.168.1.8"
+            "address": "127.0.0.8"
         }
     },
     {
@@ -42,7 +42,7 @@
         "hex": "0x02",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "192.168.1.16",
+            "address": "127.0.0.16",
             "port": 7777,
             "max_payload_bytes": 512,
             "mean_speed_bps": 100000,
@@ -75,7 +75,7 @@
         "hex": "0x08",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "192.168.1.100",
+            "address": "127.0.0.100",
             "port": 10030,
             "max_payload_bytes": 1800
         },
@@ -118,7 +118,7 @@
         "hex": "0x09",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "192.168.1.100",
+            "address": "127.0.0.100",
             "port": 10030,
             "max_payload_bytes": 1800
         },
@@ -170,7 +170,7 @@
         "hex": "0x0a",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "192.168.1.100",
+            "address": "127.0.0.100",
             "port": 10030,
             "max_payload_bytes": 1800
         },
@@ -222,7 +222,7 @@
         "hex": "0x0b",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "192.168.1.100",
+            "address": "127.0.0.100",
             "port": 10030,
             "max_payload_bytes": 1800
         },
@@ -274,7 +274,7 @@
         "hex": "0x0c",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "192.168.1.100",
+            "address": "127.0.0.100",
             "port": 10030,
             "max_payload_bytes": 1800
         },
@@ -348,7 +348,7 @@
         "hex": "0x0e",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "192.168.1.100",
+            "address": "127.0.0.100",
             "port": 10030,
             "max_payload_bytes": 1800
         },
@@ -406,7 +406,7 @@
         "hex": "0x0f",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "192.168.1.100",
+            "address": "127.0.0.100",
             "port": 10030,
             "max_payload_bytes": 1800
         },
