@@ -1,7 +1,7 @@
 {
-    "target_logical_address":"0x67",
+    "target_logical_address":"0x68",
     "source_logical_address":"0xfe",
-    "target_path_address":[6],
+    "target_path_address":[9],
     "reply_path_address":[0,0,0,3],
     "key":"0x02",
     "crc_draft":"f",
