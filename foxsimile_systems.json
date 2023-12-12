@@ -22,7 +22,7 @@
     {
         "name": "uplink",
         "hex": "0x05",
-        "uart": {
+        "uart_interface": {
             "tty_path": "/dev/ttyAMA4",
             "baud_rate": 192000,
             "parity_bits": 1,
