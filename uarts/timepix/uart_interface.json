@@ -1,5 +1,5 @@
 {
-    "tty_path":"/dev/ttyAMA2",
+    "tty_path":"/dev/ttyAMA1",
     "baud_rate":9600,
     "parity_bits":0,
     "data_bits":8,
