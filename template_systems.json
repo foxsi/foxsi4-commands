@@ -12,7 +12,7 @@
     {
         "name":"uplink",
         "hex":"0x05",
-        "uart":"foxsi4-commands/uarts/uplink/uart_interface.json"
+        "uart_interface":"foxsi4-commands/uarts/uplink/uart_interface.json"
     },
     {
         "name":"formatter",

@@ -22,8 +22,8 @@
     {
         "name": "uplink",
         "hex": "0x05",
-        "uart": {
-            "tty_path": "/dev/ttyAMA4",
+        "uart_interface": {
+            "tty_path": "/dev/ttyAMA2",
             "baud_rate": 192000,
             "parity_bits": 1,
             "data_bits": 8,
@@ -326,7 +326,7 @@
         "name": "timepix",
         "hex": "0x0d",
         "uart_interface": {
-            "tty_path": "/dev/ttyAMA2",
+            "tty_path": "/dev/ttyAMA1",
             "baud_rate": 9600,
             "parity_bits": 0,
             "data_bits": 8,
