@@ -49,7 +49,7 @@ sys_ids = [sys["id"] for sys in sys_dict]
 head = list(command_data.iloc[0])
 command_systems = [name.upper() for name in head[11:23]]
 
-command_data = command_data[3:]
+command_data = command_data[1:]
 command_data.dropna(axis=0, how="all", inplace=True)
 
 # validate systems
