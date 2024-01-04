@@ -1,0 +1,6 @@
+{
+    "unix_send_socket":"/tmp/foxsi_udp_send",
+    "unix_listen_socket":"/tmp/foxsi_udp_listen",
+    "log_received_folder":"logs/received/",
+    "log_sent_folder":"logs/sent/"
+}
