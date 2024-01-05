@@ -1,0 +1,10 @@
+{
+    "total_allocation":1,
+    "command":0,
+    "request":0,
+    "reply":1,
+    "idle":0,
+    "retry_max_count":1,
+    "receive_timeout_millis":10,
+    "intercommand_spacing_millis":3
+}
