@@ -7,6 +7,12 @@
             "address": "192.168.1.118",
             "port": 9999,
             "max_payload_bytes": 2000
+        },
+        "logger_interface": {
+            "unix_send_socket": "/tmp/foxsi_udp_send",
+            "unix_listen_socket": "/tmp/foxsi_udp_listen",
+            "log_received_folder": "logs/received/",
+            "log_sent_folder": "logs/sent/"
         }
     },
     {
@@ -21,7 +27,7 @@
     },
     {
         "name": "uplink",
-        "hex": "0x05",
+        "hex": "0x06",
         "uart_interface": {
             "tty_path": "/dev/ttyAMA2",
             "baud_rate": 192000,

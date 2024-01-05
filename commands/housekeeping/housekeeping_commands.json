@@ -862,7 +862,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x03",
-        "address": "0x07",
+        "address": "0x08",
         "write_value": "0x01",
         "example": "todo",
         "description": "turn systems on or off (to power distribution system)"
@@ -893,7 +893,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x03",
-        "address": "0x07",
+        "address": "0x08",
         "write_value": "0x00",
         "example": "todo",
         "description": "turn systems on or off (to power distribution system)"
@@ -924,7 +924,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x03",
-        "address": "0x08",
+        "address": "0x07",
         "write_value": "0x01",
         "example": "todo",
         "description": "turn systems on or off (to power distribution system)"
@@ -955,7 +955,7 @@
         "Timepix": "0",
         "trigger": "?",
         "instruction": "0x03",
-        "address": "0x08",
+        "address": "0x07",
         "write_value": "0x00",
         "example": "todo",
         "description": "turn systems on or off (to power distribution system)"

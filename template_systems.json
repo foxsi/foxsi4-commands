@@ -2,7 +2,8 @@
     {
         "name":"gse",
         "hex":"0x00",
-        "ethernet_interface":"foxsi4-commands/ethernets/gse/ethernet_interface.json"
+        "ethernet_interface":"foxsi4-commands/ethernets/gse/ethernet_interface.json",
+        "logger_interface":"foxsi4-commands/loggers/gse/logger_interface.json"
     },
     {
         "name":"downlink",
@@ -11,9 +12,8 @@
     },
     {
         "name":"uplink",
-        "hex":"0x05",
-        "uart_interface":"foxsi4-commands/uarts/uplink/uart_interface.json",
-        "timing":"foxsi4-commands/times/uplink/timing.json"
+        "hex":"0x06",
+        "uart_interface":"foxsi4-commands/uarts/uplink/uart_interface.json"
     },
     {
         "name":"formatter",
