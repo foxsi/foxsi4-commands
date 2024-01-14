@@ -35,16 +35,6 @@
             "data_bits": 8,
             "stop_bits": 1,
             "max_payload_bytes": 2
-        },
-        "timing": {
-            "total_allocation": 1,
-            "command": 0,
-            "request": 0,
-            "reply": 1,
-            "idle": 0,
-            "retry_max_count": 1,
-            "receive_timeout_millis": 100,
-            "intercommand_spacing_millis": 3
         }
     },
     {
