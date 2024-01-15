@@ -25,19 +25,19 @@ At your terminal, navigate to a folder you want this repository in. Then:
 
 ```bash
 git clone https://github.com/foxsi/foxsi4-commands.git
-cd foxsi4-commands.git
+cd foxsi4-commands
 git checkout <your branch name>
 git pull
 ```
 
 where `<your branch name>` is `cmos`, `timepix`, `cdte`, or another. Now, make your edits to the `.xlsx` file under [commands](commands) you would like to modify. When you are done, validate uniqueness for your commands and convert JSON like this:
 ```bash
-python3 foxsi4-commands/validator.py <path/to/your/xlsx/file>
+python3 validator.py <path/to/your/xlsx/file>
 ```
 
 If you are modifying `systems.json`, apply changes made in subfolders to the global system configuration files like this:
 ```bash
-python3 foxsi4-commands/expand_systems.py
+python3 expand_systems.py
 ```
 
 ```bash
