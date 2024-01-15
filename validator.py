@@ -71,18 +71,18 @@ CommandBitstring = namedtuple("CommandBitstring", "cdte_bits command_bits arg1_b
 keys = []
 values = []
 for i, row in command_data.iterrows():
-    cdte_b_str = row[1]
-    rw_b_str = row[2]
-    cmd_b_str = row[3]
-    arg1_b_str = row[6]
-    arg2_b_str = row[7]
-    lookup_instr = row[24]
-    lookup_addr = row[25]
-    lookup_len = row[10]
+    cdte_b_str = row.iloc[1]
+    rw_b_str = row.iloc[2]
+    cmd_b_str = row.iloc[3]
+    arg1_b_str = row.iloc[6]
+    arg2_b_str = row.iloc[7]
+    lookup_instr = row.iloc[24]
+    lookup_addr = row.iloc[25]
+    lookup_len = row.iloc[10]
     lookup_instr = lookup_instr.replace(" ", "")
     full_cmd_str = (rw_b_str + cmd_b_str).replace(" ", "")
     # full_cmd_hex = hex(int(full_cmd_str, 2))
-    full_cmd_hex = row[4]
+    full_cmd_hex = row.iloc[4]
     keys.append(full_cmd_hex)
     values.append((lookup_instr, lookup_addr, lookup_len))
 
