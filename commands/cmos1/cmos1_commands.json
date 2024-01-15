@@ -1237,7 +1237,7 @@
         "address": "0x00000080",
         "write_value": "0x011085f0",
         "example": "todo",
-        "description": "stop CMOS exposure"
+        "description": "enables shutdown, reboot, and remove all data commands"
     },
     {
         "name": "shutdown_cmos",
@@ -1268,7 +1268,7 @@
         "address": "0x0000008c",
         "write_value": "0x011085f0",
         "example": "todo",
-        "description": "stop CMOS exposure"
+        "description": "shuts down CMOS operating system"
     },
     {
         "name": "reboot_cmos",
@@ -1299,7 +1299,7 @@
         "address": "0x00000088",
         "write_value": "0x011085f0",
         "example": "todo",
-        "description": null
+        "description": "reboots CMOS operating system"
     },
     {
         "name": "remove_all_data",
@@ -1330,7 +1330,7 @@
         "address": "0x00000084",
         "write_value": "0x011085f0",
         "example": "todo",
-        "description": null
+        "description": "deletes all stored image data"
     },
     {
         "name": "set_exposure_192",
