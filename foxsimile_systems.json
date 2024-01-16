@@ -347,7 +347,8 @@
             "request": 1,
             "reply": 8,
             "idle": 1,
-            "receive_timeout_millis": 10,
+            "retry_max_count": 3,
+            "receive_timeout_millis": 50,
             "intercommand_spacing_millis": 3
         }
     },
