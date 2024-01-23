@@ -403,7 +403,7 @@
         "description": "read MACRO for event data in ring buffer from canister (see Formatter implementation)"
     },
     {
-        "name": "read_can3_events",
+        "name": "read_can3_all_hk",
         "CdTe select": "0000 0000",
         "R=1/W=0": "1",
         "bitstring": "111111",
