@@ -12,6 +12,7 @@
     "max_payload_bytes":1800,
     "ring_buffer_interface":{
         "pc":"foxsi4-commands/dma/cmos/pc/ring_buffer_interface.json",
-        "ql":"foxsi4-commands/dma/cmos/ql/ring_buffer_interface.json"
+        "ql":"foxsi4-commands/dma/cmos/ql/ring_buffer_interface.json",
+        "hk":"foxsi4-commands/dma/cmos/hk/ring_buffer_interface.json"
     }
 }

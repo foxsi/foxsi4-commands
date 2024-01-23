@@ -6,5 +6,10 @@
     "mean_speed_bps":100000,
     "frame_size_bytes":256,
     "static_header_size":0,
-    "static_footer_size":0
+    "static_footer_size":0,
+    "ring_buffer_interface":{
+        "rtd":"foxsi4-commands/dma/housekeeping/rtd/ring_buffer_interface.json",
+        "pow":"foxsi4-commands/dma/housekeeping/pow/ring_buffer_interface.json",
+        "intro":"foxsi4-commands/dma/housekeeping/intro/ring_buffer_interface.json"
+    }
 }
