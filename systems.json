@@ -65,7 +65,30 @@
             "mean_speed_bps": 100000,
             "frame_size_bytes": 256,
             "static_header_size": 0,
-            "static_footer_size": 0
+            "static_footer_size": 0,
+            "ring_buffer_interface": {
+                "rtd": {
+                    "ring_frame_size_bytes": "0x2a",
+                    "ring_start_address": "0x00000000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x00",
+                    "ring_write_pointer_width": "0x04"
+                },
+                "pow": {
+                    "ring_frame_size_bytes": "0x26",
+                    "ring_start_address": "0x00000000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x00",
+                    "ring_write_pointer_width": "0x04"
+                },
+                "intro": {
+                    "ring_frame_size_bytes": "0x0c",
+                    "ring_start_address": "0x00000000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x00",
+                    "ring_write_pointer_width": "0x04"
+                }
+            }
         },
         "command_type": "ethernet",
         "commands": "foxsi4-commands/commands/housekeeping/housekeeping_commands.json",
@@ -167,6 +190,13 @@
                     "frames_per_ring": "0x3d4",
                     "ring_write_pointer_address": "0x022b0314",
                     "ring_write_pointer_width": "0x04"
+                },
+                "hk": {
+                    "ring_frame_size_bytes": "0x31c",
+                    "ring_start_address": "0x022b0000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x022b0000",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -218,6 +248,13 @@
                     "ring_start_address": "0x02300000",
                     "frames_per_ring": "0x3d4",
                     "ring_write_pointer_address": "0x041b0314",
+                    "ring_write_pointer_width": "0x04"
+                },
+                "hk": {
+                    "ring_frame_size_bytes": "0x31c",
+                    "ring_start_address": "0x041b0000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x041b0000",
                     "ring_write_pointer_width": "0x04"
                 }
             }
@@ -271,6 +308,13 @@
                     "frames_per_ring": "0x3d4",
                     "ring_write_pointer_address": "0x060b0314",
                     "ring_write_pointer_width": "0x04"
+                },
+                "hk": {
+                    "ring_frame_size_bytes": "0x31c",
+                    "ring_start_address": "0x060b0000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x060b0000",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -323,6 +367,13 @@
                     "frames_per_ring": "0x3d4",
                     "ring_write_pointer_address": "0x07fb0314",
                     "ring_write_pointer_width": "0x04"
+                },
+                "hk": {
+                    "ring_frame_size_bytes": "0x31c",
+                    "ring_start_address": "0x07fb0000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x07fb0314",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
@@ -348,7 +399,16 @@
             "parity_bits": 0,
             "data_bits": 8,
             "stop_bits": 1,
-            "max_payload_bytes": 32
+            "max_payload_bytes": 32,
+            "ring_buffer_interface": {
+                "tpx": {
+                    "ring_frame_size_bytes": "0x26",
+                    "ring_start_address": "0x00000000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x00",
+                    "ring_write_pointer_width": "0x04"
+                }
+            }
         },
         "command_type": "uart",
         "commands": "foxsi4-commands/commands/timepix/timepix_commands.json",
@@ -394,14 +454,14 @@
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x90400",
-                    "ring_start_address": "0x4401000",
+                    "ring_start_address": "0x04401000",
                     "frames_per_ring": "0x20",
                     "ring_write_pointer_address": "0x248",
                     "ring_write_pointer_width": "0x04"
                 },
                 "ql": {
                     "ring_frame_size_bytes": "0x78400",
-                    "ring_start_address": "0x1000",
+                    "ring_start_address": "0x00001000",
                     "frames_per_ring": "0x20",
                     "ring_write_pointer_address": "0x240",
                     "ring_write_pointer_width": "0x04"
@@ -452,16 +512,23 @@
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x90400",
-                    "ring_start_address": "0x4401000",
+                    "ring_start_address": "0x04401000",
                     "frames_per_ring": "0x20",
                     "ring_write_pointer_address": "0x248",
                     "ring_write_pointer_width": "0x04"
                 },
                 "ql": {
                     "ring_frame_size_bytes": "0x78400",
-                    "ring_start_address": "0x1000",
+                    "ring_start_address": "0x00001000",
                     "frames_per_ring": "0x20",
                     "ring_write_pointer_address": "0x240",
+                    "ring_write_pointer_width": "0x04"
+                },
+                "hk": {
+                    "ring_frame_size_bytes": "0x218",
+                    "ring_start_address": "0x00000100",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x00000100",
                     "ring_write_pointer_width": "0x04"
                 }
             }
