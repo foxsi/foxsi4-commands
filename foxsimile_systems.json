@@ -465,6 +465,13 @@
                     "frames_per_ring": "0x20",
                     "ring_write_pointer_address": "0x240",
                     "ring_write_pointer_width": "0x04"
+                },
+                "hk": {
+                    "ring_frame_size_bytes": "0x218",
+                    "ring_start_address": "0x00000100",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x00000100",
+                    "ring_write_pointer_width": "0x04"
                 }
             }
         },
