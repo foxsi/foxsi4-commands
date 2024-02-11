@@ -4,8 +4,7 @@
         "hex": "0x00",
         "ethernet_interface": {
             "protocol": "udp",
-            "address": "127.0.0.118",
-            "mcast_group": "224.1.1.118",
+            "address": "224.1.1.118",
             "port": 9999,
             "max_payload_bytes": 2000
         },
