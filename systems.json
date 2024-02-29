@@ -13,7 +13,8 @@
             "unix_send_socket": "/tmp/foxsi_udp_send",
             "unix_listen_socket": "/tmp/foxsi_udp_listen",
             "log_received_folder": "logs/received/",
-            "log_sent_folder": "logs/sent/"
+            "log_sent_folder": "logs/sent/",
+            "uplink_device": "/dev/tty.usbserial-FTK1YS5N"
         }
     },
     {
@@ -21,7 +22,7 @@
         "hex": "0x05",
         "ethernet_interface": {
             "protocol": "tcp",
-            "address": "224.1.1.0",
+            "address": "224.1.1.118",
             "port": 8888,
             "max_payload_bytes": 2000
         }
@@ -140,7 +141,16 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 1800
+            "max_payload_bytes": 1800,
+            "ring_buffer_interface": {
+                "hk": {
+                    "ring_frame_size_bytes": "0x20",
+                    "ring_start_address": "0x00000000",
+                    "frames_per_ring": "0x01",
+                    "ring_write_pointer_address": "0x00000000",
+                    "ring_write_pointer_width": "0x04"
+                }
+            }
         },
         "command_type": "spacewire",
         "commands": "foxsi4-commands/commands/cdtede/cdtede_commands.json",
