@@ -15,6 +15,66 @@
             "log_received_folder": "logs/received/",
             "log_sent_folder": "logs/sent/",
             "uplink_device": "/dev/tty.usbserial-FTK1YS5N"
+        },
+        "display_settings": {
+            "cdte": {
+                "pc": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    },
+                    "collections": {
+                        "read_interval": 100
+                    }
+                },
+                "hk": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    }
+                }
+            },
+            "cmos": {
+                "pc": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    }
+                },
+                "ql": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    }
+                },
+                "hk": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    }
+                }
+            },
+            "timepix": {
+                "tpx": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    }
+                }
+            },
+            "housekeeping": {
+                "rtd": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    }
+                },
+                "pow": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    }
+                }
+            },
+            "cdtede": {
+                "hk": {
+                    "read_raw_to_refined": {
+                        "read_interval": 100
+                    }
+                }
+            }
         }
     },
     {

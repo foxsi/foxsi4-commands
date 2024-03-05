@@ -3,7 +3,8 @@
         "name":"gse",
         "hex":"0x00",
         "ethernet_interface":"foxsi4-commands/ethernets/gse/ethernet_interface.json",
-        "logger_interface":"foxsi4-commands/loggers/gse/logger_interface.json"
+        "logger_interface":"foxsi4-commands/loggers/gse/logger_interface.json",
+        "display_settings":"foxsi4-commands/display/gse/settings.json"
     },
     {
         "name":"downlink",
