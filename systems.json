@@ -23,7 +23,7 @@
                         "read_interval": 100
                     },
                     "collections": {
-                        "read_interval": 100
+                        "ti_clock_interval": 1.6e-07
                     }
                 },
                 "hk": {
