@@ -1,7 +1,7 @@
 {
     "cdte": {
         "pc": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             },
             "collections": {
@@ -9,50 +9,50 @@
             }
         },
         "hk": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             }
         }
     },
     "cmos": {
         "pc": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             }
         },
         "ql": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             }
         },
         "hk": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             }
         }
     },
     "timepix": {
         "tpx": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             }
         }
     },
     "housekeeping": {
         "rtd": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             }
         },
         "pow": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             }
         }
     },
     "cdtede": {
         "hk": {
-            "read_raw_to_refined": {
+            "readers": {
                 "read_interval":100
             }
         }
