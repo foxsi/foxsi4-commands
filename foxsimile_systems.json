@@ -263,7 +263,7 @@
                     "ring_write_pointer_width": "0x04"
                 },
                 "hk": {
-                    "ring_frame_size_bytes": "0x31c",
+                    "ring_frame_size_bytes": "0x330",
                     "ring_start_address": "0x022b0000",
                     "frames_per_ring": "0x01",
                     "ring_write_pointer_address": "0x022b0000",
@@ -322,7 +322,7 @@
                     "ring_write_pointer_width": "0x04"
                 },
                 "hk": {
-                    "ring_frame_size_bytes": "0x31c",
+                    "ring_frame_size_bytes": "0x330",
                     "ring_start_address": "0x041b0000",
                     "frames_per_ring": "0x01",
                     "ring_write_pointer_address": "0x041b0000",
@@ -381,7 +381,7 @@
                     "ring_write_pointer_width": "0x04"
                 },
                 "hk": {
-                    "ring_frame_size_bytes": "0x31c",
+                    "ring_frame_size_bytes": "0x330",
                     "ring_start_address": "0x060b0000",
                     "frames_per_ring": "0x01",
                     "ring_write_pointer_address": "0x060b0000",
@@ -440,7 +440,7 @@
                     "ring_write_pointer_width": "0x04"
                 },
                 "hk": {
-                    "ring_frame_size_bytes": "0x31c",
+                    "ring_frame_size_bytes": "0x330",
                     "ring_start_address": "0x07fb0000",
                     "frames_per_ring": "0x01",
                     "ring_write_pointer_address": "0x07fb0314",
@@ -466,7 +466,7 @@
         "hex": "0x0d",
         "uart_interface": {
             "tty_path": "/dev/ttyAMA1",
-            "baud_rate": 19200,
+            "baud_rate": 9600,
             "parity_bits": 0,
             "data_bits": 8,
             "stop_bits": 1,
