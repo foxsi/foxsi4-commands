@@ -27,6 +27,8 @@
         "instruction": "0x4d",
         "address": "0x00000000",
         "write_value": "0x00",
+        "order": "22",
+        "color": "0x000000",
         "example": "todo",
         "description": "read DE status control register"
     },
@@ -58,6 +60,8 @@
         "instruction": "0x4d",
         "address": "0x00000014",
         "write_value": "0x00",
+        "order": "23",
+        "color": "0x000000",
         "example": "todo",
         "description": "read DE Raspberry Pi CPU usage (percentage)"
     },
@@ -89,6 +93,8 @@
         "instruction": "0x4d",
         "address": "0x0000000c",
         "write_value": "0x00",
+        "order": "24",
+        "color": "0x000000",
         "example": "todo",
         "description": "read ping status of each canister"
     },
@@ -120,6 +126,8 @@
         "instruction": "0x4d",
         "address": "0x00000010",
         "write_value": "0x00",
+        "order": "25",
+        "color": "0x000000",
         "example": "todo",
         "description": "read temperature of Raspberry Pi CPU in \u00baC"
     },
@@ -151,6 +159,8 @@
         "instruction": "0x4d",
         "address": "0x00000018",
         "write_value": "0x00",
+        "order": "26",
+        "color": "0x000000",
         "example": "todo",
         "description": "read temperature of Raspberry Pi CPU in \u00baC"
     },
@@ -182,6 +192,8 @@
         "instruction": "0x4d",
         "address": "0x00000000",
         "write_value": "0x00",
+        "order": "27",
+        "color": "0x000000",
         "example": "todo",
         "description": "read all housekeeping data from DE"
     },
@@ -213,6 +225,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100000000003c3c3c3c",
+        "order": "16",
+        "color": "0x000000",
         "example": "todo",
         "description": "DE default state, SDRAM initialization, readout check"
     },
@@ -244,6 +258,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100010101013c3c3c3c",
+        "order": "1",
+        "color": "0x000000",
         "example": "todo",
         "description": "DE initialization step, DAQ parameter set, FPGA setup"
     },
@@ -275,6 +291,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100020202023c3c3c3c",
+        "order": "2",
+        "color": "0x000000",
         "example": "todo",
         "description": "DE standby of observation, 60V applied to all canisters"
     },
@@ -306,6 +324,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100030303033c3c3c3c",
+        "order": "7",
+        "color": "0x000000",
         "example": "todo",
         "description": "DE observation mode\u2014can begin canister observation mode"
     },
@@ -337,6 +357,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100040404043c3c3c3c",
+        "order": "14",
+        "color": "0x000000",
         "example": "todo",
         "description": "DE end observation"
     },
@@ -368,6 +390,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101000000003c3c3c3c",
+        "order": "15",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL canisters default state"
     },
@@ -399,6 +423,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101010101013c3c3c3c",
+        "order": "10",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL canisters start observation, if DE in observation mode"
     },
@@ -430,6 +456,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101010102023c3c3c3c",
+        "order": "11",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL canisters start observation, if DE in observation mode, write pointer is reset"
     },
@@ -461,6 +489,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101020202023c3c3c3c",
+        "order": "12",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL canisters stop observation. ALL canisters will enter idle state"
     },
@@ -492,6 +522,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101050505053c3c3c3c",
+        "order": "13",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL canisters stop reading out."
     },
@@ -523,6 +555,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101030300003c3c3c3c",
+        "order": "3",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL canisters get 0V high voltage applied"
     },
@@ -554,6 +588,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101030301013c3c3c3c",
+        "order": "4",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL canisters get 60V high voltage applied"
     },
@@ -585,6 +621,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101030302023c3c3c3c",
+        "order": "5",
+        "color": "0xff1741",
         "example": "todo",
         "description": "ALL canisters get 100V high voltage applied"
     },
@@ -616,6 +654,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101030303033c3c3c3c",
+        "order": "6",
+        "color": "0xff1741",
         "example": "todo",
         "description": "ALL canisters get 200V high voltage applied"
     },
@@ -647,6 +687,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100060606013c3c3c3c",
+        "order": "8",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL in sparse readout mode"
     },
@@ -678,6 +720,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100060606003c3c3c3c",
+        "order": "9",
+        "color": "0x000000",
         "example": "todo",
         "description": "ALL in full readout mode"
     },
@@ -709,6 +753,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505003c3c3c3c",
+        "order": "31",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 0"
     },
@@ -740,6 +786,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505013c3c3c3c",
+        "order": "32",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 1"
     },
@@ -771,6 +819,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505023c3c3c3c",
+        "order": "33",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 2"
     },
@@ -802,6 +852,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505033c3c3c3c",
+        "order": "34",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 3"
     },
@@ -833,6 +885,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505043c3c3c3c",
+        "order": "35",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 4"
     },
@@ -864,6 +918,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505053c3c3c3c",
+        "order": "36",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 5"
     },
@@ -895,6 +951,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505063c3c3c3c",
+        "order": "37",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 6"
     },
@@ -926,6 +984,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505073c3c3c3c",
+        "order": "38",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 7"
     },
@@ -957,6 +1017,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505083c3c3c3c",
+        "order": "39",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 8"
     },
@@ -988,6 +1050,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100050505093c3c3c3c",
+        "order": "40",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 9"
     },
@@ -1019,6 +1083,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000505050a3c3c3c3c",
+        "order": "41",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 10"
     },
@@ -1050,6 +1116,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000505050b3c3c3c3c",
+        "order": "42",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 11"
     },
@@ -1081,6 +1149,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000505050c3c3c3c3c",
+        "order": "43",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 12"
     },
@@ -1112,6 +1182,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000505050d3c3c3c3c",
+        "order": "44",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 13"
     },
@@ -1143,6 +1215,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000505050e3c3c3c3c",
+        "order": "45",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 14"
     },
@@ -1174,6 +1248,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000505050f3c3c3c3c",
+        "order": "46",
+        "color": "0x000000",
         "example": "todo",
         "description": "Set data copy rate 15"
     },
@@ -1205,6 +1281,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100070707073c3c3c3c",
+        "order": "17",
+        "color": "0x000000",
         "example": "todo",
         "description": "Update unconnected canister ping status"
     },
@@ -1236,6 +1314,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100080808003c3c3c3c",
+        "order": "28",
+        "color": "0x000000",
         "example": "todo",
         "description": "???"
     },
@@ -1267,6 +1347,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100080808013c3c3c3c",
+        "order": "29",
+        "color": "0x000000",
         "example": "todo",
         "description": "???"
     },
@@ -1298,6 +1380,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100080808023c3c3c3c",
+        "order": "30",
+        "color": "0x000000",
         "example": "todo",
         "description": "???"
     },
@@ -1329,6 +1413,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0100090909093c3c3c3c",
+        "order": "18",
+        "color": "0x000000",
         "example": "todo",
         "description": "Update disk-free value for Raspberry Pi"
     },
@@ -1360,6 +1446,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000a0a0a003c3c3c3c",
+        "order": "19",
+        "color": "0xff1741",
         "example": "todo",
         "description": "Delete raw data files from DE"
     },
@@ -1391,6 +1479,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000a0a0a013c3c3c3c",
+        "order": "20",
+        "color": "0xff1741",
         "example": "todo",
         "description": "Delete run log file from DE"
     },
@@ -1422,6 +1512,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000a0a0a023c3c3c3c",
+        "order": "21",
+        "color": "0xff1741",
         "example": "todo",
         "description": "Delete PPS log file from DE"
     },
@@ -1453,6 +1545,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b050a3c3c3c3c",
+        "order": "47",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1484,6 +1578,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b05143c3c3c3c",
+        "order": "48",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1515,6 +1611,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b051e3c3c3c3c",
+        "order": "49",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1546,6 +1644,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b05283c3c3c3c",
+        "order": "50",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1577,6 +1677,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b05323c3c3c3c",
+        "order": "51",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1608,6 +1710,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b060a3c3c3c3c",
+        "order": "52",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1639,6 +1743,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b06143c3c3c3c",
+        "order": "53",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1670,6 +1776,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b061e3c3c3c3c",
+        "order": "54",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1701,6 +1809,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b06283c3c3c3c",
+        "order": "55",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1732,6 +1842,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b06323c3c3c3c",
+        "order": "56",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1763,6 +1875,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b070a3c3c3c3c",
+        "order": "57",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1794,6 +1908,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b07143c3c3c3c",
+        "order": "58",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1825,6 +1941,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b071e3c3c3c3c",
+        "order": "59",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1856,6 +1974,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b07283c3c3c3c",
+        "order": "60",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1887,6 +2007,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b07323c3c3c3c",
+        "order": "61",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1918,6 +2040,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b080a3c3c3c3c",
+        "order": "62",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1949,6 +2073,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b08143c3c3c3c",
+        "order": "63",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -1980,6 +2106,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b081e3c3c3c3c",
+        "order": "64",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2011,6 +2139,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b08283c3c3c3c",
+        "order": "65",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2042,6 +2172,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b08323c3c3c3c",
+        "order": "66",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2073,6 +2205,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b090a3c3c3c3c",
+        "order": "67",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2104,6 +2238,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b09143c3c3c3c",
+        "order": "68",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2135,6 +2271,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b091e3c3c3c3c",
+        "order": "69",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2166,6 +2304,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b09283c3c3c3c",
+        "order": "70",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2197,6 +2337,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b09323c3c3c3c",
+        "order": "71",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2228,6 +2370,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0a0a3c3c3c3c",
+        "order": "72",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2259,6 +2403,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0a143c3c3c3c",
+        "order": "73",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2290,6 +2436,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0a1e3c3c3c3c",
+        "order": "74",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2321,6 +2469,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0a283c3c3c3c",
+        "order": "75",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2352,6 +2502,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0a323c3c3c3c",
+        "order": "76",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2383,6 +2535,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0b0a3c3c3c3c",
+        "order": "77",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2414,6 +2568,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0b143c3c3c3c",
+        "order": "78",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2445,6 +2601,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0b1e3c3c3c3c",
+        "order": "79",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2476,6 +2634,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0b283c3c3c3c",
+        "order": "80",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2507,6 +2667,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0b323c3c3c3c",
+        "order": "81",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2538,6 +2700,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0c0a3c3c3c3c",
+        "order": "82",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2569,6 +2733,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0c143c3c3c3c",
+        "order": "83",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2600,6 +2766,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0c1e3c3c3c3c",
+        "order": "84",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2631,6 +2799,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0c283c3c3c3c",
+        "order": "85",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2662,6 +2832,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0c323c3c3c3c",
+        "order": "86",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2693,6 +2865,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0d0a3c3c3c3c",
+        "order": "87",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2724,6 +2898,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0d143c3c3c3c",
+        "order": "88",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2755,6 +2931,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0d1e3c3c3c3c",
+        "order": "89",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2786,6 +2964,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0d283c3c3c3c",
+        "order": "90",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2817,6 +2997,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0d323c3c3c3c",
+        "order": "91",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2848,6 +3030,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0e0a3c3c3c3c",
+        "order": "92",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2879,6 +3063,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0e143c3c3c3c",
+        "order": "93",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2910,6 +3096,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0e1e3c3c3c3c",
+        "order": "94",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2941,6 +3129,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0e283c3c3c3c",
+        "order": "95",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -2972,6 +3162,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0e323c3c3c3c",
+        "order": "96",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3003,6 +3195,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0f0a3c3c3c3c",
+        "order": "97",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3034,6 +3228,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0f143c3c3c3c",
+        "order": "98",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3065,6 +3261,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0f1e3c3c3c3c",
+        "order": "99",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3096,6 +3294,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0f283c3c3c3c",
+        "order": "100",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3127,6 +3327,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b0f323c3c3c3c",
+        "order": "101",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3158,6 +3360,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b100a3c3c3c3c",
+        "order": "102",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3189,6 +3393,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b10143c3c3c3c",
+        "order": "103",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3220,6 +3426,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b101e3c3c3c3c",
+        "order": "104",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3251,6 +3459,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b10283c3c3c3c",
+        "order": "105",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3282,6 +3492,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b10323c3c3c3c",
+        "order": "106",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3313,6 +3525,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b110a3c3c3c3c",
+        "order": "107",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3344,6 +3558,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b11143c3c3c3c",
+        "order": "108",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3375,6 +3591,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b111e3c3c3c3c",
+        "order": "109",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3406,6 +3624,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b11283c3c3c3c",
+        "order": "110",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3437,6 +3657,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c01000b0b11323c3c3c3c",
+        "order": "111",
+        "color": "0x000000",
         "example": null,
         "description": null
     },
@@ -3468,6 +3690,8 @@
         "instruction": "0x7d",
         "address": "0x00000000",
         "write_value": "0x3c3c0101040404043c3c3c3c",
+        "order": "112",
+        "color": "0x000000",
         "example": "todo",
         "description": "DE will show status in terminal (for debug)"
     }

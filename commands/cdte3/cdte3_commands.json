@@ -27,6 +27,8 @@
         "instruction": "0x4d",
         "address": "0x060b0000",
         "write_value": "0x00",
+        "order": "8",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister control register"
     },
@@ -58,6 +60,8 @@
         "instruction": "0x4d",
         "address": "0x060b000c",
         "write_value": "0x00",
+        "order": "9",
+        "color": "0x000000",
         "example": "todo",
         "description": "NOT YET IMPLEMENTED"
     },
@@ -89,6 +93,8 @@
         "instruction": "0x4d",
         "address": "0x060b0018",
         "write_value": "0x00",
+        "order": "10",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister data acquisition parameter settings"
     },
@@ -120,6 +126,8 @@
         "instruction": "0x4d",
         "address": "0x060b00f0",
         "write_value": "0x00",
+        "order": "11",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister ASIC flags"
     },
@@ -151,6 +159,8 @@
         "instruction": "0x4d",
         "address": "0x060b00fc",
         "write_value": "0x00",
+        "order": "12",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister ASIC parameter list"
     },
@@ -182,6 +192,8 @@
         "instruction": "0x4d",
         "address": "0x060b0300",
         "write_value": "0x00",
+        "order": "13",
+        "color": "0x000000",
         "example": "todo",
         "description": "NOT YET IMPLEMENTED"
     },
@@ -213,6 +225,8 @@
         "instruction": "0x4d",
         "address": "0x060b030c",
         "write_value": "0x00",
+        "order": "14",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister event data ring buffer write address"
     },
@@ -244,6 +258,8 @@
         "instruction": "0x4d",
         "address": "0x060b0314",
         "write_value": "0x00",
+        "order": "15",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister event data ring buffer write address, mod ring buffer size"
     },
@@ -275,6 +291,8 @@
         "instruction": "0x4d",
         "address": "0x060b0318",
         "write_value": "0x00",
+        "order": "16",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister event data frame counter"
     },
@@ -306,6 +324,8 @@
         "instruction": "0x4d",
         "address": "0x060b031c",
         "write_value": "0x00",
+        "order": "17",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister event data ring buffer write address (reserved for Formatter)"
     },
@@ -337,6 +357,8 @@
         "instruction": "0x4d",
         "address": "0x060b0324",
         "write_value": "0x00",
+        "order": "18",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister event data ring buffer write address, mod ring buffer size (reserved for Formatter)"
     },
@@ -368,6 +390,8 @@
         "instruction": "0x4d",
         "address": "0x060b0328",
         "write_value": "0x00",
+        "order": "19",
+        "color": "0x000000",
         "example": "todo",
         "description": "read canister event data frame counter (reserved for Formatter)"
     },
@@ -399,6 +423,8 @@
         "instruction": "0x4d",
         "address": "0x060b0314",
         "write_value": "0x00",
+        "order": "20",
+        "color": "0x000000",
         "example": "todo",
         "description": "read MACRO for event data in ring buffer from canister (see Formatter implementation)"
     },
@@ -430,6 +456,8 @@
         "instruction": "0x4d",
         "address": "0x060b0000",
         "write_value": "0x00",
+        "order": "21",
+        "color": "0x000000",
         "example": "todo",
         "description": "read all housekeeping data from canister"
     },
@@ -461,6 +489,8 @@
         "instruction": "0x4d",
         "address": "0x00",
         "write_value": "0x00",
+        "order": "22",
+        "color": "0x000000",
         "example": "todo",
         "description": "read error status flags from system"
     },
@@ -492,6 +522,8 @@
         "instruction": "0x7d",
         "address": "0x060b0000",
         "write_value": "0x3c3c0100000000003c3c3c3c",
+        "order": "7",
+        "color": "0x000000",
         "example": "todo",
         "description": "canister 3 default state"
     },
@@ -523,6 +555,8 @@
         "instruction": "0x7d",
         "address": "0x060b0000",
         "write_value": "0x3c3c0100010101013c3c3c3c",
+        "order": "1",
+        "color": "0x000000",
         "example": "todo",
         "description": "canister 3 start observation, if DE in observation mode"
     },
@@ -554,6 +588,8 @@
         "instruction": "0x7d",
         "address": "0x060b0000",
         "write_value": "0x3c3c0100020202023c3c3c3c",
+        "order": "6",
+        "color": "0x000000",
         "example": "todo",
         "description": "canister 3 stop observation. ALL canisters will enter idle state"
     },
@@ -585,6 +621,8 @@
         "instruction": "0x7d",
         "address": "0x060b0000",
         "write_value": "0x3c3c0100030300003c3c3c3c",
+        "order": "2",
+        "color": "0x000000",
         "example": "todo",
         "description": "canister 3 get 0V high voltage applied"
     },
@@ -616,6 +654,8 @@
         "instruction": "0x7d",
         "address": "0x060b0000",
         "write_value": "0x3c3c0100030301013c3c3c3c",
+        "order": "3",
+        "color": "0x000000",
         "example": "todo",
         "description": "canister 3 get 60V high voltage applied"
     },
@@ -647,6 +687,8 @@
         "instruction": "0x7d",
         "address": "0x060b0000",
         "write_value": "0x3c3c0100030302023c3c3c3c",
+        "order": "4",
+        "color": "0xff1741",
         "example": "todo",
         "description": "canister 3 get 100V high voltage applied"
     },
@@ -678,6 +720,8 @@
         "instruction": "0x7d",
         "address": "0x060b0000",
         "write_value": "0x3c3c0100030303033c3c3c3c",
+        "order": "5",
+        "color": "0xff1741",
         "example": "todo",
         "description": "canister 3 get 100V high voltage applied"
     },
@@ -709,6 +753,8 @@
         "instruction": "0x7d",
         "address": "0x060b0000",
         "write_value": "0x3c3c0100040404043c3c3c3c",
+        "order": "23",
+        "color": "0x000000",
         "example": "todo",
         "description": "canister 3 will show status in DE terminal (for debug)"
     }

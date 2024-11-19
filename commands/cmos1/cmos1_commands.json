@@ -27,6 +27,8 @@
         "instruction": "0x4d",
         "address": "0x00",
         "write_value": "0x00",
+        "order": "71",
+        "color": "0x000000",
         "example": "todo",
         "description": "test communication with system"
     },
@@ -58,6 +60,8 @@
         "instruction": "0x4d",
         "address": "0x00",
         "write_value": "0x00",
+        "order": "72",
+        "color": "0x000000",
         "example": "todo",
         "description": "read one word from memory at address"
     },
@@ -89,6 +93,8 @@
         "instruction": "0x4d",
         "address": "0x00",
         "write_value": "0x00",
+        "order": "73",
+        "color": "0x000000",
         "example": "todo",
         "description": "read a block of memory at address"
     },
@@ -120,6 +126,8 @@
         "instruction": "0x4d",
         "address": "0x00000100",
         "write_value": "0x00",
+        "order": "44",
+        "color": "0x000000",
         "example": "todo",
         "description": "read all housekeeping data from system"
     },
@@ -151,6 +159,8 @@
         "instruction": "0x4d",
         "address": "0x000001a0",
         "write_value": "0x00",
+        "order": "45",
+        "color": "0x000000",
         "example": "todo",
         "description": "read most recent linetime"
     },
@@ -182,6 +192,8 @@
         "instruction": "0x4d",
         "address": "0x000001a4",
         "write_value": "0x00",
+        "order": "46",
+        "color": "0x000000",
         "example": "todo",
         "description": "read linetime of most recent PPS received"
     },
@@ -213,6 +225,8 @@
         "instruction": "0x4d",
         "address": "0x000001b0",
         "write_value": "0x00",
+        "order": "47",
+        "color": "0x000000",
         "example": "todo",
         "description": "read cpu load"
     },
@@ -244,6 +258,8 @@
         "instruction": "0x4d",
         "address": "0x000001b4",
         "write_value": "0x00",
+        "order": "48",
+        "color": "0x000000",
         "example": "todo",
         "description": "read remaining disk space"
     },
@@ -275,6 +291,8 @@
         "instruction": "0x4d",
         "address": "0x000001c0",
         "write_value": "0x00",
+        "order": "49",
+        "color": "0x000000",
         "example": "todo",
         "description": "check software status"
     },
@@ -306,6 +324,8 @@
         "instruction": "0x4d",
         "address": "0x000001c4",
         "write_value": "0x00",
+        "order": "50",
+        "color": "0x000000",
         "example": "todo",
         "description": "check time of last error"
     },
@@ -337,6 +357,8 @@
         "instruction": "0x4d",
         "address": "0x000001c8",
         "write_value": "0x00",
+        "order": "51",
+        "color": "0x000000",
         "example": "todo",
         "description": "check error flags"
     },
@@ -368,6 +390,8 @@
         "instruction": "0x4d",
         "address": "0x000001cc",
         "write_value": "0x00",
+        "order": "52",
+        "color": "0x000000",
         "example": "todo",
         "description": "check error in training mode"
     },
@@ -399,6 +423,8 @@
         "instruction": "0x4d",
         "address": "0x000001d0",
         "write_value": "0x00",
+        "order": "53",
+        "color": "0x000000",
         "example": "todo",
         "description": "check if data is valid"
     },
@@ -430,6 +456,8 @@
         "instruction": "0x4d",
         "address": "0x000001f0",
         "write_value": "0x00",
+        "order": "54",
+        "color": "0x000000",
         "example": "todo",
         "description": "read the CMOS sensor temperature"
     },
@@ -461,6 +489,8 @@
         "instruction": "0x4d",
         "address": "0x000001f4",
         "write_value": "0x00",
+        "order": "55",
+        "color": "0x000000",
         "example": "todo",
         "description": "read the FPGA core temperature"
     },
@@ -492,6 +522,8 @@
         "instruction": "0x4d",
         "address": "0x00000200",
         "write_value": "0x00",
+        "order": "56",
+        "color": "0x000000",
         "example": "todo",
         "description": "read exposure gain mode"
     },
@@ -523,6 +555,8 @@
         "instruction": "0x4d",
         "address": "0x00000204",
         "write_value": "0x00",
+        "order": "57",
+        "color": "0x000000",
         "example": "todo",
         "description": "read exposure setting for quick-look data"
     },
@@ -554,6 +588,8 @@
         "instruction": "0x4d",
         "address": "0x00000208",
         "write_value": "0x00",
+        "order": "58",
+        "color": "0x000000",
         "example": "todo",
         "description": "read exposure setting for photon-counting data"
     },
@@ -585,6 +621,8 @@
         "instruction": "0x4d",
         "address": "0x0000020c",
         "write_value": "0x00",
+        "order": "59",
+        "color": "0x000000",
         "example": "todo",
         "description": "read exposure setting for N"
     },
@@ -616,6 +654,8 @@
         "instruction": "0x4d",
         "address": "0x00000210",
         "write_value": "0x00",
+        "order": "60",
+        "color": "0x000000",
         "example": "todo",
         "description": "read exposure setting for n"
     },
@@ -647,6 +687,8 @@
         "instruction": "0x4d",
         "address": "0x00000214",
         "write_value": "0x00",
+        "order": "61",
+        "color": "0x000000",
         "example": "todo",
         "description": "read exposure gain even setting"
     },
@@ -678,6 +720,8 @@
         "instruction": "0x4d",
         "address": "0x00000218",
         "write_value": "0x00",
+        "order": "62",
+        "color": "0x000000",
         "example": "todo",
         "description": "read exposure gain odd setting"
     },
@@ -709,6 +753,8 @@
         "instruction": "0x4d",
         "address": "0x0000021c",
         "write_value": "0x00",
+        "order": "63",
+        "color": "0x000000",
         "example": "todo",
         "description": "read exposure n capture"
     },
@@ -740,6 +786,8 @@
         "instruction": "0x4d",
         "address": "0x00000240",
         "write_value": "0x00",
+        "order": "64",
+        "color": "0x000000",
         "example": "todo",
         "description": "read CMOS QL file read pointer"
     },
@@ -771,6 +819,8 @@
         "instruction": "0x4d",
         "address": "0x00000244",
         "write_value": "0x00",
+        "order": "65",
+        "color": "0x000000",
         "example": "todo",
         "description": "read CMOS QL size"
     },
@@ -802,6 +852,8 @@
         "instruction": "0x4d",
         "address": "0x00000248",
         "write_value": "0x00",
+        "order": "66",
+        "color": "0x000000",
         "example": "todo",
         "description": "read CMOS PC file read pointer"
     },
@@ -833,6 +885,8 @@
         "instruction": "0x4d",
         "address": "0x0000024c",
         "write_value": "0x00",
+        "order": "67",
+        "color": "0x000000",
         "example": "todo",
         "description": "read CMOS PC size"
     },
@@ -864,6 +918,8 @@
         "instruction": "0x4d",
         "address": "0x00000220",
         "write_value": "0x00",
+        "order": "68",
+        "color": "0x000000",
         "example": "todo",
         "description": "read CMOS data file write pointer"
     },
@@ -895,6 +951,8 @@
         "instruction": "0x4d",
         "address": "0x00000240",
         "write_value": "0x00",
+        "order": "69",
+        "color": "0x000000",
         "example": "todo",
         "description": "read CMOS data file write pointer"
     },
@@ -926,6 +984,8 @@
         "instruction": "0x4d",
         "address": "0x00001000",
         "write_value": "0x00",
+        "order": "70",
+        "color": "0x000000",
         "example": "todo",
         "description": "read CMOS data file write pointer"
     },
@@ -957,6 +1017,8 @@
         "instruction": "0x7d",
         "address": "0x00",
         "write_value": "0",
+        "order": "74",
+        "color": "0x000000",
         "example": "todo",
         "description": "tell system to stop storing data on disk"
     },
@@ -988,6 +1050,8 @@
         "instruction": "0x7d",
         "address": "0x00",
         "write_value": "0",
+        "order": "75",
+        "color": "0x000000",
         "example": "todo",
         "description": "tell system to start storing data on disk"
     },
@@ -1019,6 +1083,8 @@
         "instruction": "0x7d",
         "address": "0x00000040",
         "write_value": "0x011085f0",
+        "order": "7",
+        "color": "0x000000",
         "example": "todo",
         "description": "start CMOS initialization"
     },
@@ -1050,6 +1116,8 @@
         "instruction": "0x7d",
         "address": "0x00000044",
         "write_value": "0x011085f0",
+        "order": "8",
+        "color": "0x000000",
         "example": "todo",
         "description": "start CMOS training"
     },
@@ -1081,6 +1149,8 @@
         "instruction": "0x7d",
         "address": "0x00000048",
         "write_value": "0x011085f0",
+        "order": "9",
+        "color": "0x000000",
         "example": "todo",
         "description": "set the CMOS exposure parameters"
     },
@@ -1112,6 +1182,8 @@
         "instruction": "0x7d",
         "address": "0x00",
         "write_value": "0x00",
+        "order": "82",
+        "color": "0x000000",
         "example": "todo",
         "description": "unused"
     },
@@ -1143,6 +1215,8 @@
         "instruction": "0x7d",
         "address": "0x00000050",
         "write_value": "0x011085f0",
+        "order": "10",
+        "color": "0x000000",
         "example": "todo",
         "description": "start CMOS exposure and data acquisition"
     },
@@ -1174,6 +1248,8 @@
         "instruction": "0x7d",
         "address": "0x00000054",
         "write_value": "0x011085f0",
+        "order": "2",
+        "color": "0x000000",
         "example": "todo",
         "description": "stop CMOS exposure"
     },
@@ -1205,6 +1281,8 @@
         "instruction": "0x7d",
         "address": "0x00000020",
         "write_value": "0x011085f0",
+        "order": "1",
+        "color": "0x000000",
         "example": "todo",
         "description": "start CMOS setup (first stops, then inits, then trains, then sets exposure)."
     },
@@ -1236,6 +1314,8 @@
         "instruction": "0x7d",
         "address": "0x00000080",
         "write_value": "0x011085f0",
+        "order": "3",
+        "color": "0xff8f4b",
         "example": "todo",
         "description": "enables shutdown, reboot, and remove all data commands"
     },
@@ -1267,6 +1347,8 @@
         "instruction": "0x7d",
         "address": "0x0000008c",
         "write_value": "0x011085f0",
+        "order": "5",
+        "color": "0x000000",
         "example": "todo",
         "description": "shuts down CMOS operating system"
     },
@@ -1298,6 +1380,8 @@
         "instruction": "0x7d",
         "address": "0x00000088",
         "write_value": "0x011085f0",
+        "order": "6",
+        "color": "0x000000",
         "example": "todo",
         "description": "reboots CMOS operating system"
     },
@@ -1329,6 +1413,8 @@
         "instruction": "0x7d",
         "address": "0x00000084",
         "write_value": "0x011085f0",
+        "order": "4",
+        "color": "0xff1741",
         "example": "todo",
         "description": "deletes all stored image data"
     },
@@ -1360,6 +1446,8 @@
         "instruction": "0x7d",
         "address": "0x00000030",
         "write_value": "0x011085f0",
+        "order": "11",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 192 for CMOS sensor"
     },
@@ -1391,6 +1479,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0xc01085f0",
+        "order": "12",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 192 for CMOS sensor"
     },
@@ -1422,6 +1512,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0xa91085f0",
+        "order": "13",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 169 for CMOS sensor"
     },
@@ -1453,6 +1545,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x931085f0",
+        "order": "14",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 147 for CMOS sensor"
     },
@@ -1484,6 +1578,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x801085f0",
+        "order": "15",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 128 for CMOS sensor"
     },
@@ -1515,6 +1611,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x6f1085f0",
+        "order": "16",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 111 for CMOS sensor"
     },
@@ -1546,6 +1644,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x611085f0",
+        "order": "17",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 97 for CMOS sensor"
     },
@@ -1577,6 +1677,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x541085f0",
+        "order": "18",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 84 for CMOS sensor"
     },
@@ -1608,6 +1710,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x491085f0",
+        "order": "19",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 73 for CMOS sensor"
     },
@@ -1639,6 +1743,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x401085f0",
+        "order": "20",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 64 for CMOS sensor"
     },
@@ -1670,6 +1776,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x371085f0",
+        "order": "21",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 55 for CMOS sensor"
     },
@@ -1701,6 +1809,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x301085f0",
+        "order": "22",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 48 for CMOS sensor"
     },
@@ -1732,6 +1842,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x2a1085f0",
+        "order": "23",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 42 for CMOS sensor"
     },
@@ -1763,6 +1875,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x241085f0",
+        "order": "24",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 36 for CMOS sensor"
     },
@@ -1794,6 +1908,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x1f1085f0",
+        "order": "25",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 31 for CMOS sensor"
     },
@@ -1825,6 +1941,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x1b1085f0",
+        "order": "26",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 27 for CMOS sensor"
     },
@@ -1856,6 +1974,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x181085f0",
+        "order": "27",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 24 for CMOS sensor"
     },
@@ -1887,6 +2007,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x141085f0",
+        "order": "28",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 20 for CMOS sensor"
     },
@@ -1918,6 +2040,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x121085f0",
+        "order": "29",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 18 for CMOS sensor"
     },
@@ -1949,6 +2073,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x0f1085f0",
+        "order": "30",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 15 for CMOS sensor"
     },
@@ -1980,6 +2106,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x0d1085f0",
+        "order": "31",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 13 for CMOS sensor"
     },
@@ -2011,6 +2139,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x0b1085f0",
+        "order": "32",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 11 for CMOS sensor"
     },
@@ -2042,6 +2172,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x0a1085f0",
+        "order": "33",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 10 for CMOS sensor"
     },
@@ -2073,6 +2205,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x081085f0",
+        "order": "34",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 8 for CMOS sensor"
     },
@@ -2104,6 +2238,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x071085f0",
+        "order": "35",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 7 for CMOS sensor"
     },
@@ -2135,6 +2271,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x061085f0",
+        "order": "36",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 6 for CMOS sensor"
     },
@@ -2166,6 +2304,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x051085f0",
+        "order": "37",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 5 for CMOS sensor"
     },
@@ -2197,6 +2337,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x041085f0",
+        "order": "38",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 4 for CMOS sensor"
     },
@@ -2228,6 +2370,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x031085f0",
+        "order": "39",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 3 for CMOS sensor"
     },
@@ -2259,6 +2403,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x021085f0",
+        "order": "40",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 2 for CMOS sensor"
     },
@@ -2290,6 +2436,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x011085f0",
+        "order": "41",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 1 for CMOS sensor"
     },
@@ -2321,6 +2469,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x001085f0",
+        "order": "42",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 0 for CMOS sensor"
     },
@@ -2352,6 +2502,8 @@
         "instruction": "0x7d",
         "address": "0x00000034",
         "write_value": "0x001085f0",
+        "order": "43",
+        "color": "0x000000",
         "example": "todo",
         "description": "set quick look mode and photon counting mode inttim to 0 for CMOS sensor"
     },
@@ -2383,6 +2535,8 @@
         "instruction": "0x7d",
         "address": "0x00000314",
         "write_value": "0x011085f0",
+        "order": "76",
+        "color": "0x000000",
         "example": "todo",
         "description": "notify system that launch will occur soon"
     },
@@ -2414,6 +2568,8 @@
         "instruction": "0x7d",
         "address": "0x00000310",
         "write_value": "0x011085f0",
+        "order": "77",
+        "color": "0x000000",
         "example": "todo",
         "description": "notify system that launch has been put on hold"
     },
@@ -2445,6 +2601,8 @@
         "instruction": "0x7d",
         "address": "0x0000030c",
         "write_value": "0x011085f0",
+        "order": "78",
+        "color": "0x000000",
         "example": "todo",
         "description": "notify system that the rocket shutter door has opened"
     },
@@ -2476,6 +2634,8 @@
         "instruction": "0x7d",
         "address": "0x00000308",
         "write_value": "0x011085f0",
+        "order": "79",
+        "color": "0x000000",
         "example": "todo",
         "description": "notify system that the rocket shutter door has closed"
     },
@@ -2507,6 +2667,8 @@
         "instruction": "0x7d",
         "address": "0x00000304",
         "write_value": "0x011085f0",
+        "order": "80",
+        "color": "0x000000",
         "example": "todo",
         "description": "notify system that the attenuator ring has been inserted"
     },
@@ -2538,6 +2700,8 @@
         "instruction": "0x7d",
         "address": "0x00000300",
         "write_value": "0x011085f0",
+        "order": "81",
+        "color": "0x000000",
         "example": "todo",
         "description": "notify system that power will be cut soon"
     }
