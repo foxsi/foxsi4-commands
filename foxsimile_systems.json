@@ -183,7 +183,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfd",
+            "target_logical_address": "0xfe",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -235,7 +235,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xf9",
+            "target_logical_address": "0xfe",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -294,7 +294,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfa",
+            "target_logical_address": "0xfe",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -353,7 +353,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfb",
+            "target_logical_address": "0xfe",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -412,7 +412,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfc",
+            "target_logical_address": "0xfe",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
