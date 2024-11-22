@@ -3,7 +3,7 @@ A list of uplink commands for FOXSI-4 onboard systems and associated tools.
 
 ## About this repository
 
-This repository is used to manage changes to the FOXSI-4 flight command list. There is a full command deck and relevant metadata for each subsystem. All system-specific metadata is stored in the top-level configuration file, [systems.json](systems.json). This file includes all systems visible to the FOXSI-4 Formatter.
+This repository tells the FOXSI software how the FOXSI hardware is configured. It also provides some global software configuration information. There is a full command deck and relevant metadata for each subsystem. All system-specific metadata is stored in the top-level configuration file, [systems.json](systems.json). This file includes all systems visible to the FOXSI Formatter. This file is loaded by both Formatter software and GSE software when the start, so that they can agree on things like packet definitions and Ethernet interfaces.
 
 A script ([expand_systems.py](expand_systems.py)) can be used to generate a nearly fully elaborated version of [template_systems.json](template_systems.json) called [systems.json](systems.json) that substitutes JSON content where links previously existed. This is done for all fields except `commands`, which references a large array of command-related JSON content for each system.
 
