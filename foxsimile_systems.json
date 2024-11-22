@@ -14,7 +14,7 @@
             "unix_listen_socket": "/tmp/foxsi_udp_listen",
             "log_received_folder": "logs/received/",
             "log_sent_folder": "logs/sent/",
-            "uplink_device": "/dev/tty.usbserial-FTK1YS5N"
+            "uplink_device": "/tmp/foxsi_serial"
         },
         "display_settings": {
             "cdte": {
@@ -91,7 +91,7 @@
         "name": "uplink",
         "hex": "0x06",
         "uart_interface": {
-            "tty_path": "/dev/ttyAMA2",
+            "tty_path": "/tmp/foxsi_serial",
             "baud_rate": 1200,
             "parity_bits": 0,
             "data_bits": 8,
@@ -465,7 +465,7 @@
         "name": "timepix",
         "hex": "0x0d",
         "uart_interface": {
-            "tty_path": "/dev/ttyAMA1",
+            "tty_path": "/tmp/foxsi_serial",
             "baud_rate": 9600,
             "parity_bits": 0,
             "data_bits": 8,
