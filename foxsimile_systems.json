@@ -14,7 +14,7 @@
             "unix_listen_socket": "/tmp/foxsi_udp_listen",
             "log_received_folder": "logs/received/",
             "log_sent_folder": "logs/sent/",
-            "uplink_device": "/dev/tty.usbserial-FTK1YS5N"
+            "uplink_device": "/tmp/foxsi_serial"
         },
         "display_settings": {
             "cdte": {
@@ -91,7 +91,7 @@
         "name": "uplink",
         "hex": "0x06",
         "uart_interface": {
-            "tty_path": "/dev/ttyAMA2",
+            "tty_path": "/tmp/foxsi_serial",
             "baud_rate": 1200,
             "parity_bits": 0,
             "data_bits": 8,
@@ -183,7 +183,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfe",
+            "target_logical_address": "0xfd",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -235,7 +235,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfe",
+            "target_logical_address": "0xf9",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -294,7 +294,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfe",
+            "target_logical_address": "0xfa",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -353,7 +353,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfe",
+            "target_logical_address": "0xfb",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -412,7 +412,7 @@
             "max_payload_bytes": 1800
         },
         "spacewire_interface": {
-            "target_logical_address": "0xfe",
+            "target_logical_address": "0xfc",
             "source_logical_address": "0xfe",
             "target_path_address": [
                 1,
@@ -465,7 +465,7 @@
         "name": "timepix",
         "hex": "0x0d",
         "uart_interface": {
-            "tty_path": "/dev/ttyAMA1",
+            "tty_path": "/tmp/foxsi_serial",
             "baud_rate": 9600,
             "parity_bits": 0,
             "data_bits": 8,
