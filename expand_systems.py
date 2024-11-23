@@ -40,7 +40,7 @@ def substitute_json(json_dict:dict):
                         raise Exception("tried to open the wrong thing :(")
 
 # create a localhost version of an IPv4 address, preserving LSB of the original address. Ignores multicast.
-def set_local_ip(addr:str):
+def set_local_socket(addr:str):
     if isinstance(addr, str):
         try:
             ipv4addr = ipaddress.IPv4Network(addr)
@@ -51,6 +51,9 @@ def set_local_ip(addr:str):
             print("ip ", addr, "\twill have local value ", local_addr)
             return local_addr
         except ValueError:
+            # could be a serial port...
+            if "/dev/tty" in addr:
+                addr = "/tmp/foxsi_serial"
             return addr
 
 # recursively trawls a JSON dict and substitutes localhost IP addresses.
@@ -61,7 +64,7 @@ def substitute_ip(json_dict:dict):
             val = substitute_ip(val)
             json_dict[key] = val
         elif isinstance(val, str):
-            val = set_local_ip(val)
+            val = set_local_socket(val)
             json_dict[key] = val
     return json_dict
             
