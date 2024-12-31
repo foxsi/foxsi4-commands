@@ -67,7 +67,7 @@ You should have a little familiarity with [JSON syntax](https://javaee.github.io
 
 ### Structure
 At the top level, `systems.json` is a [JSON](https://en.wikipedia.org/wiki/JSON#Data_types) array of JSON objects which represent *systems*. What is a system in this context? A system is, in a loose sense, a thing that the Formatter can talk to. **A system object always contains two key/value pairs: `name` and `hex`:**
-```json
+```jsonc
 {
     [ // the array of systems
         {
@@ -87,7 +87,7 @@ The order of system definitions (i.e. "gse" appearing before "cdte1") in the lis
 
 ### `ethernet_interface`
 All systems except `timepix` and `uplink` contain an `ethernet_interface` block. There are variations in specificity in the `ethernet_interface` definitions for different systems. This block must contain at least an `address` key:
-```json
+```jsonc
 {
     "ethernet_interface": {
         "address": "192.168.1.10"
@@ -135,7 +135,7 @@ For `max_payload_bytes`, note that the usage here is slightly different from `et
 
 ### Commanding
 If a `system` receives commands from the Formatter, two top-level fields need to be defined in the JSON: `command_type` and `commands`.
-```json
+```jsonc
 {
     "name": "cdte1",
     "hex":  "0x09",
@@ -170,7 +170,7 @@ If a `system` sends data back to the Formatter, it must have one or more `ring_b
 If you want to include new *types* of data for downlink, you can create new names in `ring_buffer_interface` objects. But! You will also need to modify the Formatter's [`Parameters.h`](https://github.com/foxsi/foxsi-4matter/blob/main/include/Parameters.h) file and the GSE's [`listening.py`](https://github.com/foxsi/GSE-FOXSI-4/blob/main/FoGSE/listening.py) to include these new strings and their hex encoding in the downlink header.
 
 So a `ring_buffer_interface` might look like this:
-```json
+```jsonc
 {
     "ring_buffer_interface": {
         "pc": {
@@ -208,7 +208,7 @@ For more complicated transfer schemes, in which systems package data with differ
 
 #### Note on optional header/footer fields
 Note that for these optional `initial*`/`subsequent*` fields, the Formatter will still remove `static_header_size` and `static_footer_size` amount of data from the start and end of each packet before frame reassembly. So if, e.g., your data will arrive with a 12 byte header initially and a 4 byte header after that, and no footer, you can set:
-```json
+```jsonc
 {
     "initial_header_size": 8,
     "subsequent_header_size": 0,
@@ -216,7 +216,7 @@ Note that for these optional `initial*`/`subsequent*` fields, the Formatter will
 }
 ```
 or, equivalently,
-```json
+```jsonc
 {
     "initial_header_size": 11,
     "subsequent_header_size": 3,
@@ -242,7 +242,7 @@ There are several fields that are currently unused by the Formatter. These are p
 ## Tips and caveats
 ### 1. [Formatter v1.2.0](https://github.com/foxsi/foxsi-4matter/releases/tag/v1.2.0) (FOXSI-4 flight) discrepancy
 [FOXSI-4 flight Formatter code (v1.2.0)](https://github.com/foxsi/foxsi-4matter/releases/tag/v1.2.0) transmitted downlink data to `gse.ethernet_interface.address`. But the GSE listened for downlink on `gse.ethernet_interface.mcast_group`. So if you use Formatter v1.2.0, you need to manually set *only the Formatter's copy of `systems.json`* to have `gse.ethernet_interface.address` match the GSE's `gse.ethernet_interface.mcast_group`. For FOXSI-4 flight, the Formatter's `systems.json` looked like this:
-```json
+```jsonc
 {
     "ethernet_interface": {
         "protocol": "udp",
@@ -253,7 +253,7 @@ There are several fields that are currently unused by the Formatter. These are p
 }
 ```
 and the GSE's `systems.json` looked like this:
-```json
+```jsonc
 {
     "ethernet_interface": {
         "protocol": "udp",
