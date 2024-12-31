@@ -7,7 +7,7 @@
             "address": "127.0.0.118",
             "mcast_group": "224.1.1.118",
             "port": 9999,
-            "max_payload_bytes": 2000
+            "max_payload_bytes": 1472
         },
         "logger_interface": {
             "unix_send_socket": "/tmp/foxsi_udp_send",
@@ -84,7 +84,7 @@
             "protocol": "tcp",
             "address": "224.1.1.118",
             "port": 8888,
-            "max_payload_bytes": 2000
+            "max_payload_bytes": 1472
         }
     },
     {
@@ -180,7 +180,7 @@
             "protocol": "tcp",
             "address": "127.0.0.100",
             "port": 10030,
-            "max_payload_bytes": 1800
+            "max_payload_bytes": 1472
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -232,7 +232,7 @@
             "protocol": "tcp",
             "address": "127.0.0.100",
             "port": 10030,
-            "max_payload_bytes": 1800
+            "max_payload_bytes": 1472
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -291,7 +291,7 @@
             "protocol": "tcp",
             "address": "127.0.0.100",
             "port": 10030,
-            "max_payload_bytes": 1800
+            "max_payload_bytes": 1472
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -350,7 +350,7 @@
             "protocol": "tcp",
             "address": "127.0.0.100",
             "port": 10030,
-            "max_payload_bytes": 1800
+            "max_payload_bytes": 1472
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -409,7 +409,7 @@
             "protocol": "tcp",
             "address": "127.0.0.100",
             "port": 10030,
-            "max_payload_bytes": 1800
+            "max_payload_bytes": 1472
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -501,7 +501,7 @@
             "protocol": "tcp",
             "address": "127.0.0.100",
             "port": 10030,
-            "max_payload_bytes": 1800
+            "max_payload_bytes": 1472
         },
         "spacewire_interface": {
             "target_logical_address": "0x67",
@@ -566,7 +566,7 @@
             "protocol": "tcp",
             "address": "127.0.0.100",
             "port": 10030,
-            "max_payload_bytes": 1800
+            "max_payload_bytes": 1472
         },
         "spacewire_interface": {
             "target_logical_address": "0x68",
