@@ -10,6 +10,7 @@
     "ring_buffer_interface":{
         "rtd":"foxsi4-commands/dma/housekeeping/rtd/ring_buffer_interface.json",
         "pow":"foxsi4-commands/dma/housekeeping/pow/ring_buffer_interface.json",
-        "intro":"foxsi4-commands/dma/housekeeping/intro/ring_buffer_interface.json"
+        "intro":"foxsi4-commands/dma/housekeeping/intro/ring_buffer_interface.json",
+        "ping":"foxsi4-commands/dma/housekeeping/ping/ring_buffer_interface.json"
     }
 }
