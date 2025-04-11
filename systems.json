@@ -7,7 +7,7 @@
             "address": "192.168.1.118",
             "mcast_group": "224.1.1.118",
             "port": 9999,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         },
         "logger_interface": {
             "unix_send_socket": "/tmp/foxsi_udp_send",
@@ -84,7 +84,7 @@
             "protocol": "tcp",
             "address": "224.1.1.118",
             "port": 8888,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         }
     },
     {
@@ -187,7 +187,7 @@
             "protocol": "tcp",
             "address": "192.168.1.100",
             "port": 10030,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -208,7 +208,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 1800,
+            "max_payload_bytes": 1458,
             "ring_buffer_interface": {
                 "hk": {
                     "ring_frame_size_bytes": "0x20",
@@ -239,7 +239,7 @@
             "protocol": "tcp",
             "address": "192.168.1.100",
             "port": 10030,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -260,7 +260,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 1800,
+            "max_payload_bytes": 1458,
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x800c",
@@ -298,7 +298,7 @@
             "protocol": "tcp",
             "address": "192.168.1.100",
             "port": 10030,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -319,7 +319,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 1800,
+            "max_payload_bytes": 1458,
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x800c",
@@ -357,7 +357,7 @@
             "protocol": "tcp",
             "address": "192.168.1.100",
             "port": 10030,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -378,7 +378,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 1800,
+            "max_payload_bytes": 1458,
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x800c",
@@ -416,7 +416,7 @@
             "protocol": "tcp",
             "address": "192.168.1.100",
             "port": 10030,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         },
         "spacewire_interface": {
             "target_logical_address": "0xfe",
@@ -437,7 +437,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 1800,
+            "max_payload_bytes": 1458,
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x800c",
@@ -508,7 +508,7 @@
             "protocol": "tcp",
             "address": "192.168.1.100",
             "port": 10030,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         },
         "spacewire_interface": {
             "target_logical_address": "0x67",
@@ -528,7 +528,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 1800,
+            "max_payload_bytes": 1458,
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x90400",
@@ -573,7 +573,7 @@
             "protocol": "tcp",
             "address": "192.168.1.100",
             "port": 10030,
-            "max_payload_bytes": 1472
+            "max_payload_bytes": 1458
         },
         "spacewire_interface": {
             "target_logical_address": "0x68",
@@ -593,7 +593,7 @@
             "static_header_size": 24,
             "static_footer_size": 1,
             "mean_speed_bps": 0,
-            "max_payload_bytes": 1800,
+            "max_payload_bytes": 1458,
             "ring_buffer_interface": {
                 "pc": {
                     "ring_frame_size_bytes": "0x90400",
