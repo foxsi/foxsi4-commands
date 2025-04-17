@@ -82,5 +82,9 @@ The `instruction`, `address`, and `write_value` fields for Housekeeping commands
 
 If you are adding new commands for Housekeeping, you will need to modify [`formatter_interface.h`](https://github.com/foxsi/foxsi4-hk/blob/main/formatter_interface.h)/[`formatter_interface.c`](https://github.com/foxsi/foxsi4-hk/blob/main/formatter_interface.c) in the Housekeeping board software.
 
+The reply length for Housekeeping commands is the length of only the Ethernet payload, and should not include TCP or IP header length.
+
 ### Bare UART (Timepix)
-Timepix commands are sent over UART and are each a single byte long. The `write_value` column contains the byte that is sent for each command. These values _are identical_ to the unique hex code for the command, so no command translation is needed. For example, if the Formatter receives the uplink command string `0x0d 0x63`, it will look up Timepix using the first byte (`0x0d`) then send the command `0x63` to it.
+Timepix commands are sent over UART and are each a single byte long. The `write_value` column contains the byte that is sent for each command. These values _are identical_ to the unique hex code for the command, so no command translation is needed. For example, if the Formatter receives the uplink command string `0x0d 0x63`, it will look up Timepix using the first byte (`0x0d`) then send the command `0x63` to it. 
+
+As with all the other interfaces, discuss with the detector provider what command byte to send and how much reply data to expect if you are implementing any new commands.
