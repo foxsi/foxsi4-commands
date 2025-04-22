@@ -9,7 +9,7 @@
     "static_header_size":24,
     "static_footer_size":1,
     "mean_speed_bps":0,
-    "max_payload_bytes":1458,
+    "max_payload_bytes":1448,
     "ring_buffer_interface":{
         "pc":"foxsi4-commands/dma/cmos/pc/ring_buffer_interface.json",
         "ql":"foxsi4-commands/dma/cmos/ql/ring_buffer_interface.json",
