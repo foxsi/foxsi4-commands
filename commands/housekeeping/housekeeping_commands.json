@@ -27,7 +27,7 @@
         "instruction": "0x03",
         "address": "0x0e",
         "write_value": "0x00",
-        "order": "36",
+        "order": "37",
         "color": "0x000000",
         "example": "todo",
         "description": "get power output on/off mask from power distribution system"
@@ -60,7 +60,7 @@
         "instruction": "0x03",
         "address": "0x0f",
         "write_value": "0x00",
-        "order": "37",
+        "order": "38",
         "color": "0x000000",
         "example": "todo",
         "description": "get power output on/off mask from power distribution system"
@@ -93,7 +93,7 @@
         "instruction": "0x01",
         "address": "0xf2",
         "write_value": "0x00",
-        "order": "38",
+        "order": "39",
         "color": "0x000000",
         "example": "todo",
         "description": "get all RTD measurements from temp sensor 1"
@@ -126,7 +126,7 @@
         "instruction": "0x02",
         "address": "0xf2",
         "write_value": "0x00",
-        "order": "39",
+        "order": "40",
         "color": "0x000000",
         "example": "todo",
         "description": "get all RTD measurements from temp sensor 2"
@@ -159,7 +159,7 @@
         "instruction": "0x04",
         "address": "0x20",
         "write_value": "0x00",
-        "order": "40",
+        "order": "41",
         "color": "0x000000",
         "example": "todo",
         "description": "get all power health measurements from power distribution system"
@@ -192,7 +192,7 @@
         "instruction": "0x07",
         "address": "0x0f",
         "write_value": "0x00",
-        "order": "41",
+        "order": "42",
         "color": "0x000000",
         "example": "todo",
         "description": "get flight state value from microcontroller"
@@ -225,7 +225,7 @@
         "instruction": "0x07",
         "address": "0x0e",
         "write_value": "0x00",
-        "order": "42",
+        "order": "43",
         "color": "0x000000",
         "example": "todo",
         "description": "get all error flags from microcontroller"
@@ -258,7 +258,7 @@
         "instruction": "0x07",
         "address": "0x0b",
         "write_value": "0x00",
-        "order": "43",
+        "order": "44",
         "color": "0x000000",
         "example": "todo",
         "description": "get microcontroller core clock counter (uint16_t)"
@@ -291,7 +291,7 @@
         "instruction": "0x03",
         "address": "0x0a",
         "write_value": "0x01",
-        "order": "44",
+        "order": "45",
         "color": "0x000000",
         "example": "todo",
         "description": "turn systems on or off (to power distribution system)"
@@ -324,7 +324,7 @@
         "instruction": "0x03",
         "address": "0x0a",
         "write_value": "0x00",
-        "order": "45",
+        "order": "46",
         "color": "0x000000",
         "example": "todo",
         "description": "turn systems on or off (to power distribution system)"
@@ -1017,7 +1017,7 @@
         "instruction": "0x01",
         "address": "0xff",
         "write_value": "0x00",
-        "order": "25",
+        "order": "26",
         "color": "0x000000",
         "example": "todo",
         "description": "start initializing temp sensor 1"
@@ -1050,7 +1050,7 @@
         "instruction": "0x02",
         "address": "0xff",
         "write_value": "0x00",
-        "order": "26",
+        "order": "27",
         "color": "0x000000",
         "example": "todo",
         "description": "start initializing temp sensor 2"
@@ -1083,7 +1083,7 @@
         "instruction": "0x01",
         "address": "0xf0",
         "write_value": "0x00",
-        "order": "27",
+        "order": "28",
         "color": "0x000000",
         "example": "todo",
         "description": "start temp sensor 1 conversion"
@@ -1116,7 +1116,7 @@
         "instruction": "0x02",
         "address": "0xf0",
         "write_value": "0x00",
-        "order": "28",
+        "order": "29",
         "color": "0x000000",
         "example": "todo",
         "description": "start temp sensor 2 conversion"
@@ -1149,7 +1149,7 @@
         "instruction": "0x04",
         "address": "0xff",
         "write_value": "0x00",
-        "order": "29",
+        "order": "30",
         "color": "0x000000",
         "example": "todo",
         "description": "setup AD7490 power health monitor"
@@ -1182,7 +1182,7 @@
         "instruction": "0x07",
         "address": "0xf0",
         "write_value": "0x00",
-        "order": "30",
+        "order": "31",
         "color": "0x000000",
         "example": "todo",
         "description": "Set state to waiting"
@@ -1215,7 +1215,7 @@
         "instruction": "0x07",
         "address": "0xf0",
         "write_value": "0x01",
-        "order": "31",
+        "order": "32",
         "color": "0x000000",
         "example": "todo",
         "description": "Set state to cancel PPS output"
@@ -1248,7 +1248,7 @@
         "instruction": "0x07",
         "address": "0xf0",
         "write_value": "0x02",
-        "order": "32",
+        "order": "33",
         "color": "0x000000",
         "example": "todo",
         "description": "Set state to prelaunch (PPS will output)"
@@ -1281,7 +1281,7 @@
         "instruction": "0x07",
         "address": "0xf0",
         "write_value": "0x03",
-        "order": "33",
+        "order": "34",
         "color": "0x000000",
         "example": "todo",
         "description": "Set state to shutter open"
@@ -1314,7 +1314,7 @@
         "instruction": "0x07",
         "address": "0xf0",
         "write_value": "0x04",
-        "order": "34",
+        "order": "35",
         "color": "0x000000",
         "example": "todo",
         "description": "Set state to end-of-flight"
@@ -1347,7 +1347,7 @@
         "instruction": "0x07",
         "address": "0xe0",
         "write_value": "0x00",
-        "order": "35",
+        "order": "36",
         "color": "0x000000",
         "example": "todo",
         "description": "Formatter must handle this explicitly, should transmit 0x07e00000"
