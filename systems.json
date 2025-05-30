@@ -120,8 +120,8 @@
         "name": "housekeeping",
         "hex": "0x02",
         "ethernet_interface": {
-            "protocol": "tcp",
-            "address": "192.168.1.16",
+            "protocol": "udp",
+            "address": "192.168.1.17",
             "port": 7777,
             "max_payload_bytes": 512,
             "mean_speed_bps": 100000,

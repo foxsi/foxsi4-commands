@@ -1350,7 +1350,7 @@
         "order": "36",
         "color": "0x000000",
         "example": "todo",
-        "description": "Formatter must handle this explicitly, should transmit 0x07e00000"
+        "description": "Formatter must handle this explicitly, should transmit 0x07e00"
     },
     {
         "name": "set_readout_disable",
