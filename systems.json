@@ -292,7 +292,7 @@
         }
     },
     {
-        "name": "cdte2",
+        "name": "cdte5",
         "hex": "0x0a",
         "ethernet_interface": {
             "protocol": "tcp",
@@ -338,7 +338,7 @@
             }
         },
         "command_type": "spacewire",
-        "commands": "foxsi4-commands/commands/cdte2/cdte2_commands.json",
+        "commands": "foxsi4-commands/commands/cdte5/cdte5_commands.json",
         "timing": {
             "total_allocation": 2250,
             "command": 1,
