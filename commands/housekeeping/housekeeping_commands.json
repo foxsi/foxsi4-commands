@@ -462,7 +462,7 @@
         "description": "turn systems on or off (to power distribution system)"
     },
     {
-        "name": "set_power_cdte2_off",
+        "name": "set_power_cdte5_off",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "1000010",
@@ -495,7 +495,7 @@
         "description": "turn systems on or off (to power distribution system)"
     },
     {
-        "name": "set_power_cdte2_on",
+        "name": "set_power_cdte5_on",
         "CdTe select": "0000 0000",
         "R=1/W=0": "0",
         "bitstring": "1100010",
