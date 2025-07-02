@@ -1,0 +1,7 @@
+{
+    "ring_frame_size_bytes":"0x08",
+    "ring_start_address":"0x00000000",
+    "frames_per_ring":"0x01",
+    "ring_write_pointer_address":"0x00",
+    "ring_write_pointer_width":"0x04"
+}
