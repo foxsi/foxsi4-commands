@@ -511,7 +511,7 @@
             "reply": 8,
             "idle": 1,
             "retry_max_count": 3,
-            "receive_timeout_millis": 50,
+            "receive_timeout_millis": 150,
             "intercommand_spacing_millis": 3
         }
     },
